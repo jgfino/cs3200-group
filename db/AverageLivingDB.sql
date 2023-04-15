@@ -1,6 +1,7 @@
-SHOW Databases;
-
 CREATE DATABASE AverageLivingDB;
+
+grant all privileges on AverageLivingDB.* to 'webapp'@'%';
+flush privileges;
 
 USE AverageLivingDB;
 
