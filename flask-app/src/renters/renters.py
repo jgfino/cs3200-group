@@ -9,7 +9,7 @@ renters = Blueprint('renters', __name__)
 
 @renters.route('/renters', methods=['GET'])
 def get_renters():
-    q = 'select FirstName, LastName, UserID from Renter join User on Renter.UserID = User.UserID'
+    q = 'select FirstName, LastName, User.UserID, RenterID from Renter join User on Renter.UserID = User.UserID'
     return do_query(q)
 
 # Get renter details for renter with a particular userID
@@ -71,7 +71,7 @@ def get_videos(propertyID):
 
 @renters.route('/properties', methods=['GET'])
 def get_properties():
-    q = 'select PropertyID, NeighborhoodID, NickName from Property join Neighborhood on Property.NeighborhoodID = Neighborhood.NeighborhoodID'
+    q = 'select PropertyID, Num_Bedrooms, Num_Bathrooms, Property.NeighborhoodID, NickName from Property join Neighborhood on Property.NeighborhoodID = Neighborhood.NeighborhoodID'
     return do_query(q)
 
 # Story 4 - Get lease information for a specific renter
@@ -97,7 +97,8 @@ def update_renter(userID):
     phone_number = req_data['phone']
     q = 'update User set FirstName = "{0}", LastName = "{1}", Email = "{2}", Phone = "{3}" where UserID = {4}'.format(
         first_name, last_name, email, phone_number, userID)
-    return do_insert(q)
+    do_insert(q)
+    return "Success"
 
 
 # Renters can favorite a property
@@ -110,7 +111,9 @@ def create_favorite():
     q = 'insert into Fav_properties (UserID, PropertyID) values ({0}, {1})'.format(
         user_id, property_id)
 
-    return do_insert(q)
+    do_insert(q)
+
+    return "Success"
 
 # Renters can delete a favorite property
 
@@ -124,4 +127,6 @@ def delete_favorite():
     q = 'delete from Fav_properties where UserID = {0} and PropertyID = {1}'.format(
         user_id, property_id)
 
-    return do_delete(q)
+    do_delete(q)
+
+    return "Success"

@@ -9,7 +9,7 @@ landlords = Blueprint('landlords', __name__)
 
 @landlords.route('/landlords', methods=['GET'])
 def get_landlords():
-    q = 'select FirstName, LastName, UserID from Landlord join User on Landlord.UserID = User.UserID'
+    q = 'select FirstName, LastName, User.UserID, LandlordID from Landlord join User on Landlord.UserID = User.UserID'
     return do_query(q)
 
 # Get landlord details for landlord with a particular userID
@@ -63,6 +63,8 @@ def create_lease():
 
     do_insert(q)
 
+    return "Success"
+
 
 @landlords.route('/leases/<PropertyID>/<LeaseID>', methods=['PUT'])
 def update_lease(PropertyID, LeaseID):
@@ -76,6 +78,8 @@ def update_lease(PropertyID, LeaseID):
 
     do_insert(q)
 
+    return "Success"
+
 
 @landlords.route('/leases/<PropertyID>/<LeaseID>', methods=['DELETE'])
 def delete_lease(PropertyID, LeaseID):
@@ -83,6 +87,8 @@ def delete_lease(PropertyID, LeaseID):
         PropertyID, LeaseID)
 
     do_delete(q)
+
+    return "Success"
 
 
 # Story 5 - upload/delete pictures/videos
