@@ -9,7 +9,7 @@ DROP TABLE IF EXISTS Neighborhood;
 -- Create Neighborhood table
 CREATE TABLE IF NOT EXISTS Neighborhood
 (
-    NeighborhoodID char(8),
+    NeighborhoodID INTEGER AUTO_INCREMENT NOT NULL,
     CostSqFt       INTEGER NOT NULL,
     Appreciation   INTEGER NOT NULL,
     NumSchools     INTEGER,
@@ -43,7 +43,7 @@ DROP TABLE IF EXISTS User;
 -- Create User table
 CREATE TABLE IF NOT EXISTS User
 (
-    UserID    char(8),
+    UserID    INTEGER AUTO_INCREMENT NOT NULL,
     City      varchar(20)  NOT NULL,
     State     varchar(20)  NOT NULL,
     Zip       INTEGER      NOT NULL,
@@ -87,13 +87,13 @@ DROP TABLE IF EXISTS Renter;
 -- Create Renter table
 CREATE TABLE Renter
 (
-    UserID      char(8),
-    RenterID    char(8),
+    UserID      INTEGER,
+    RenterID    INTEGER AUTO_INCREMENT NOT NULL,
     SmokingPref boolean,
     NoiseLevel  varchar(50),
     FOREIGN KEY (UserID) REFERENCES User (UserID)
         ON UPDATE CASCADE ON DELETE CASCADE,
-    PRIMARY KEY (UserID, RenterID)
+    PRIMARY KEY (RenterID, UserID)
 );
 
 insert into Renter (UserID, RenterID, SmokingPref, NoiseLevel)
@@ -119,12 +119,12 @@ DROP TABLE IF EXISTS Landlord;
 -- Create Landlord table
 CREATE TABLE Landlord
 (
-    UserID      char(8),
-    LandlordID  char(8),
+    UserID      INTEGER,
+    LandlordID  INTEGER AUTO_INCREMENT NOT NULL,
     SmokingPref boolean,
     FOREIGN KEY (UserID) REFERENCES User (UserID)
         ON UPDATE CASCADE ON DELETE CASCADE,
-    PRIMARY KEY (UserID, LandlordID)
+    PRIMARY KEY (LandlordID, UserID)
 );
 
 insert into Landlord (UserID, LandlordID, SmokingPref)
@@ -147,11 +147,11 @@ DROP TABLE IF EXISTS Seller;
 -- Create Seller table
 CREATE TABLE Seller
 (
-    UserID   char(8),
-    SellerID char(8),
+    UserID   INTEGER,
+    SellerID INTEGER AUTO_INCREMENT NOT NULL,
     FOREIGN KEY (UserID) REFERENCES User (UserID)
         ON UPDATE CASCADE ON DELETE CASCADE,
-    PRIMARY KEY (UserID, SellerID)
+    PRIMARY KEY (SellerID, UserID)
 );
 
 insert into Seller (UserID, SellerID)
@@ -175,12 +175,12 @@ DROP TABLE IF EXISTS Buyer;
 -- Create Buyer table
 CREATE TABLE Buyer
 (
-    UserID   char(8),
-    BuyerID  char(8),
+    UserID   INTEGER,
+    BuyerID  INTEGER AUTO_INCREMENT NOT NULL,
     RoomPref INTEGER,
     FOREIGN KEY (UserID) REFERENCES User (UserID)
         ON UPDATE CASCADE ON DELETE CASCADE,
-    PRIMARY KEY (UserID, BuyerID)
+    PRIMARY KEY (BuyerID, UserID)
 );
 
 insert into Buyer (UserID, BuyerID, RoomPref)
@@ -200,7 +200,7 @@ DROP TABLE IF EXISTS Property;
 -- Create Property table
 CREATE TABLE IF NOT EXISTS Property
 (
-    PropertyID      char(8),
+    PropertyID      INTEGER AUTO_INCREMENT NOT NULL,
     Property_Type   TEXT        NOT NULL,
     Market_Price    INTEGER     NOT NULL,
     School_Distance INTEGER,
@@ -218,11 +218,11 @@ CREATE TABLE IF NOT EXISTS Property
     Pets_Allowed    BOOLEAN     NOT NULL,
     WasherDryer     BOOLEAN     NOT NULL,
     AC              BOOLEAN     NOT NULL,
-    NeighborhoodID  char(8),
-    SellerUserID    char(8),
-    SellerId        char(8),
-    RenterUserID    char(8),
-    RenterID        char(8),
+    NeighborhoodID  INTEGER,
+    SellerUserID    INTEGER,
+    SellerId        INTEGER,
+    RenterUserID    INTEGER,
+    RenterID        INTEGER,
     FOREIGN KEY (NeighborhoodID) REFERENCES Neighborhood (NeighborhoodID)
         ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (SellerUserID, SellerId) REFERENCES Seller (UserID, SellerID)
@@ -253,8 +253,8 @@ values (3, 'House', 11514, 48, 1, 2, 'Merchant', 'Anderson', 'South Carolina', 3
 DROP TABLE IF EXISTS Fav_Properties;
 CREATE TABLE Fav_Properties
 (
-    UserID     char(8),
-    PropertyID char(8),
+    UserID     INTEGER,
+    PropertyID INTEGER,
     FOREIGN KEY (UserID) REFERENCES User (UserID),
     FOREIGN KEY (PropertyID) REFERENCES Property (PropertyID),
     PRIMARY KEY (UserID, PropertyID)
@@ -271,18 +271,18 @@ DROP TABLE IF EXISTS Deed;
 -- Create Deed table
 CREATE TABLE Deed
 (
-    PropertyID   char(8),
-    DeedID       char(8),
+    PropertyID   INTEGER,
+    DeedID       INTEGER AUTO_INCREMENT NOT NULL,
     PurchaseDate DATE NOT NULL,
-    SellerUserID char(8),
-    SellerId     char(8),
-    BuyerUserID  char(8),
-    BuyerId      char(8),
+    SellerUserID INTEGER,
+    SellerId     INTEGER,
+    BuyerUserID  INTEGER,
+    BuyerId      INTEGER,
     FOREIGN KEY (SellerUserID, SellerId) REFERENCES Seller (UserID, SellerID)
         ON UPDATE CASCADE ON DELETE SET NULL,
     FOREIGN KEY (BuyerUserID, BuyerId) REFERENCES Buyer (UserID, BuyerId)
         ON UPDATE CASCADE ON DELETE SET NULL,
-    PRIMARY KEY (PropertyID, DeedID)
+    PRIMARY KEY (DeedID, PropertyID)
 );
 
 insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
@@ -298,19 +298,19 @@ DROP TABLE IF EXISTS Lease;
 -- Create Lease table
 CREATE TABLE Lease
 (
-    PropertyID     char(8),
-    LeaseID        char(8),
+    PropertyID     INTEGER,
+    LeaseID        INTEGER AUTO_INCREMENT NOT NULL,
     StartDate      date NOT NULL,
     EndDate        date NOT NULL,
-    LandlordUserID char(8),
-    LandlordID     char(8),
-    RenterUserID   char(8),
-    RenterID       char(8),
+    LandlordUserID INTEGER,
+    LandlordID     INTEGER,
+    RenterUserID   INTEGER,
+    RenterID       INTEGER,
     FOREIGN KEY (LandlordUserID, LandlordID) REFERENCES Landlord (UserID, LandlordID)
         ON UPDATE CASCADE ON DELETE SET NULL,
     FOREIGN KEY (RenterUserID, RenterID) REFERENCES Renter (UserID, RenterID)
         ON UPDATE CASCADE ON DELETE SET NULL,
-    PRIMARY KEY (PropertyID, LeaseID)
+    PRIMARY KEY (LeaseID, PropertyID)
 );
 
 insert into Lease (propertyid, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
@@ -324,17 +324,17 @@ DROP TABLE IF EXISTS Media;
 -- Create Media Table
 CREATE TABLE IF NOT EXISTS Media
 (
-    MediaID     char(8),
+    MediaID     INTEGER AUTO_INCREMENT NOT NULL,
     Format      varchar(10)  NOT NULL,
     FilePath    varchar(200) NOT NULL,
     FileSize    varchar(20)  NOT NULL,
-    PropertyID  char(8),
-    Uploaded_By char(8),
+    PropertyID  INTEGER,
+    Uploaded_By INTEGER,
     FOREIGN KEY (PropertyID) REFERENCES Property (PropertyID)
         ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (Uploaded_By) REFERENCES User (UserID)
         ON UPDATE cascade ON DELETE CASCADE,
-    Primary Key (PropertyID, MediaID)
+    Primary Key (MediaID, PropertyID)
 );
 
 insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
@@ -348,15 +348,15 @@ DROP TABLE IF EXISTS Picture;
 -- Create Picture table
 CREATE TABLE IF NOT EXISTS Picture
 (
-    PictureID  char(8),
+    PictureID  INTEGER AUTO_INCREMENT NOT NULL,
     Width      varchar(10) NOT NULL,
     Height     varchar(10) NOT NULL,
     isPanorama BOOLEAN     NOT NULL,
-    PropertyID char(8),
-    MediaID    char(8),
+    PropertyID INTEGER,
+    MediaID    INTEGER,
     FOREIGN KEY (PropertyID, MediaID)
         REFERENCES Media (PropertyID, MediaID),
-    Primary Key (PropertyID, MediaID, PictureID)
+    Primary Key (PictureID, PropertyID, MediaID)
 );
 
 insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
@@ -370,14 +370,14 @@ DROP TABLE IF EXISTS Video;
 -- Create Video table
 CREATE TABLE IF NOT EXISTS Video
 (
-    VideoID    char(8),
+    VideoID    INTEGER AUTO_INCREMENT NOT NULL,
     HD         BOOLEAN     NOT NULL,
     Duration   varchar(10) NOT NULL,
-    PropertyID char(8),
-    MediaID    char(8),
+    PropertyID INTEGER,
+    MediaID    INTEGER,
     FOREIGN KEY (PropertyID, MediaID)
         REFERENCES Media (PropertyID, MediaID),
-    Primary Key (PropertyID, MediaID, VideoID)
+    Primary Key (VideoID, PropertyID, MediaID)
 );
 
 insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
