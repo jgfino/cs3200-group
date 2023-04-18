@@ -108,7 +108,7 @@ def create_favorite():
     user_id = req_data['user_id']
     property_id = req_data['property_id']
 
-    q = 'insert into Fav_properties (UserID, PropertyID) values ({0}, {1})'.format(
+    q = 'insert into Fav_Properties (UserID, PropertyID) values ({0}, {1})'.format(
         user_id, property_id)
 
     do_insert(q)
