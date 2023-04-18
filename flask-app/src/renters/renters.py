@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from src.queryhelper import do_query, do_delete, do_insert
+from src.queryhelper import do_query, do_delete, do_insert, do_query_data
 
 
 renters = Blueprint('renters', __name__)
@@ -10,7 +10,14 @@ renters = Blueprint('renters', __name__)
 @renters.route('/renters', methods=['GET'])
 def get_renters():
     q = 'select FirstName, LastName, User.UserID, RenterID from Renter join User on Renter.UserID = User.UserID'
-    return do_query(q)
+    response = do_query_data(q)
+
+    # convert to array where {label: "First Last", value: "UserID"}
+    # this is for the dropdown
+    json_data = []
+    for row in response:
+        json_data.append({'label': row[0] + ' ' + row[1], 'value': row[2]})
+    return json_data
 
 # Get renter details for renter with a particular userID
 
@@ -19,7 +26,7 @@ def get_renters():
 def get_renter(userID):
     q = 'select * from Renter join User on Renter.UserID = User.UserID where Renter.UserID = {0}'.format(
         userID)
-    return do_query(q)
+    return do_query(q, True)
 
 # Story 1 - Get details for a specific property
 
