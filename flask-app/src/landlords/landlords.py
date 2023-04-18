@@ -104,9 +104,7 @@ def insert_media(req_data):
     q = 'insert into Media (Format, FilePath, FileSize, PropertyID, Uploaded_By) values ("{0}", "{1}", {2}, {3}, {4})'.format(
         file_format, file_path, file_size, property_id, uploaded_by)
 
-    inserted_row = do_insert(q)
-    media_id = inserted_row["MediaID"]
-    return media_id
+    return do_insert(q)
 
 
 @landlords.route('/uploadPhoto', methods=['POST'])
@@ -148,16 +146,12 @@ def upload_video():
     return "Success"
 
 
-@landlords.route('/deleteMedia', methods=['POST'])
-def delete_media():
-    req_data = request.get_json()
-
-    media_id = req_data['media_id']
-    property_id = req_data['property_id']
+@landlords.route('/deleteMedia/<PropertyID>/<MediaID>', methods=['DELETE'])
+def delete_media(PropertyID, MediaID):
 
     # Delete the media record
     q = 'delete from Media where MediaID = {0} and PropertyID = {1}'.format(
-        media_id, property_id)
+        MediaID, PropertyID)
 
     do_delete(q)
 

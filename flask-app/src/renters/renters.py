@@ -35,7 +35,7 @@ def get_property(propertyID):
 
 @renters.route('/properties/<minPrice>/<maxPrice>', methods=['GET'])
 def get_properties_in_price_range(minPrice, maxPrice):
-    q = 'select * from Property where Price >= {0} and Price <= {1}'.format(
+    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1}'.format(
         minPrice, maxPrice)
     return do_query(q)
 
@@ -43,9 +43,9 @@ def get_properties_in_price_range(minPrice, maxPrice):
 
 
 @renters.route('/neighborhoods/<neighborhoodID>', methods=['GET'])
-def get_landlord(neigborhoodID):
-    q = 'select * Neighborhood where NeighborhoodID = {0}'.format(
-        neigborhoodID)
+def get_landlord(neighborhoodID):
+    q = 'select * from Neighborhood where NeighborhoodID = {0}'.format(
+        neighborhoodID)
     return do_query(q)
 
 # Story 5 - Get photos for a property
@@ -108,7 +108,7 @@ def create_favorite():
     user_id = req_data['user_id']
     property_id = req_data['property_id']
 
-    q = 'insert into Fav_properties (UserID, PropertyID) values ({0}, {1})'.format(
+    q = 'insert into Fav_Properties (UserID, PropertyID) values ({0}, {1})'.format(
         user_id, property_id)
 
     do_insert(q)
@@ -124,7 +124,7 @@ def delete_favorite():
     user_id = req_data['user_id']
     property_id = req_data['property_id']
 
-    q = 'delete from Fav_properties where UserID = {0} and PropertyID = {1}'.format(
+    q = 'delete from Fav_Properties where UserID = {0} and PropertyID = {1}'.format(
         user_id, property_id)
 
     do_delete(q)

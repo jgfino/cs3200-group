@@ -1,4 +1,3 @@
-import logging
 from src import db
 from flask import jsonify, make_response
 
@@ -34,8 +33,7 @@ def do_insert(query):
     for row in theData:
         json_data.append(dict(zip(row_headers, row)))
 
-    logging.info(json_data)
-    return json_data[0]
+    return json_data[0]['last_insert_id()']
 
 
 def do_delete(query):
