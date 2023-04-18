@@ -44,7 +44,7 @@ def get_properties_in_price_range(minPrice, maxPrice):
 
 @renters.route('/neighborhoods/<neigborhoodID>', methods=['GET'])
 def get_landlord(neigborhoodID):
-    q = 'select * Neighborhood where NeighborhoodID = {0}'.format(
+    q = 'select * from Neighborhood where NeighborhoodID = {0}'.format(
         neigborhoodID)
     return do_query(q)
 
