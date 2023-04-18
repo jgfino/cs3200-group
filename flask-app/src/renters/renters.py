@@ -42,7 +42,7 @@ def get_properties_in_price_range(minPrice, maxPrice):
 # Story 3 - Get neighborhood details for specific neighborhood
 
 
-@renters.route('/neighborhoods/<neighborhoodID>', methods=['GET'])
+@renters.route('/neighborhoods/<neigborhoodID>', methods=['GET'])
 def get_landlord(neigborhoodID):
     q = 'select * Neighborhood where NeighborhoodID = {0}'.format(
         neigborhoodID)
