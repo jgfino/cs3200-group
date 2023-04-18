@@ -35,7 +35,7 @@ def get_property(propertyID):
 
 @renters.route('/properties/<minPrice>/<maxPrice>', methods=['GET'])
 def get_properties_in_price_range(minPrice, maxPrice):
-    q = 'select * from Property where Price >= {0} and Price <= {1}'.format(
+    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1}'.format(
         minPrice, maxPrice)
     return do_query(q)
 
