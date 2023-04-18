@@ -124,7 +124,7 @@ def delete_favorite():
     user_id = req_data['user_id']
     property_id = req_data['property_id']
 
-    q = 'delete from Fav_properties where UserID = {0} and PropertyID = {1}'.format(
+    q = 'delete from Fav_Properties where UserID = {0} and PropertyID = {1}'.format(
         user_id, property_id)
 
     do_delete(q)
