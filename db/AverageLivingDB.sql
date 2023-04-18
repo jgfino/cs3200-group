@@ -355,7 +355,7 @@ CREATE TABLE IF NOT EXISTS Picture
     PropertyID INTEGER,
     MediaID    INTEGER,
     FOREIGN KEY (PropertyID, MediaID)
-        REFERENCES Media (PropertyID, MediaID),
+        REFERENCES Media (PropertyID, MediaID) ON DELETE CASCADE,
     Primary Key (PictureID, PropertyID, MediaID)
 );
 
@@ -376,7 +376,7 @@ CREATE TABLE IF NOT EXISTS Video
     PropertyID INTEGER,
     MediaID    INTEGER,
     FOREIGN KEY (PropertyID, MediaID)
-        REFERENCES Media (PropertyID, MediaID),
+        REFERENCES Media (PropertyID, MediaID) ON DELETE CASCADE,
     Primary Key (VideoID, PropertyID, MediaID)
 );
 

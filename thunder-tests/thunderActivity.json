@@ -148,5 +148,81 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "c6ded6ed-43ee-4b65-93e2-0da7afd7c33f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8001/l/uploadPhoto",
+    "url": "http://localhost:8001/l/uploadPhoto",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-18T22:09:00.013Z",
+    "modified": "2023-04-18T22:09:08.795Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"format\": 1,\n  \"file_path\": \"2023-07-12\",\n  \"file_size\": \"2024-08-15\",\n  \"property_id\": 1,\n  \"uploaded_by\": 3,\n  \"width\": 200,\n  \"height\": 500,\n  \"is_panorama\": 0\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "0dbebbc7-392b-4432-8c2c-49f1d2d7454f",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8001/l/uploadVideo",
+    "url": "http://localhost:8001/l/uploadVideo",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2023-04-18T22:19:30.699Z",
+    "modified": "2023-04-18T22:19:35.529Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"format\": 1,\n  \"file_path\": \"2023-07-12\",\n  \"file_size\": \"2024-08-15\",\n  \"property_id\": 1,\n  \"uploaded_by\": 3,\n  \"hd\": 1,\n  \"duration\": 500\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f7c86b0f-935f-487a-897d-ef4f2a43c2d8",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8001/l/deleteMedia/1/21",
+    "url": "http://localhost:8001/l/deleteMedia/1/21",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-04-18T22:21:13.639Z",
+    "modified": "2023-04-18T22:21:13.639Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"format\": 1,\n  \"file_path\": \"2023-07-12\",\n  \"file_size\": \"2024-08-15\",\n  \"property_id\": 1,\n  \"uploaded_by\": 3,\n  \"hd\": 1,\n  \"duration\": 500\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "48ebde6f-e2da-49d2-bf9f-c2009a87a673",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:8001/l/deleteMedia/1/4",
+    "url": "http://localhost:8001/l/deleteMedia/1/4",
+    "method": "DELETE",
+    "sortNum": 0,
+    "created": "2023-04-18T22:24:02.427Z",
+    "modified": "2023-04-18T22:24:02.427Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"format\": 1,\n  \"file_path\": \"2023-07-12\",\n  \"file_size\": \"2024-08-15\",\n  \"property_id\": 1,\n  \"uploaded_by\": 3,\n  \"hd\": 1,\n  \"duration\": 500\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]
