@@ -644,8 +644,6 @@ values (199, 'Kansas City', 'Missouri', 31644, 'Talbert', 'Whardley', 'twhardley
 insert into User (UserID, City, State, Zip, FirstName, LastName, Email, Phone)
 values (200, 'Omaha', 'Nebraska', 38920, 'Shannon', 'Houson', 'shouson0@npr.org', '402-694-0533');
 insert into User (UserID, City, State, Zip, FirstName, LastName, Email, Phone)
-values (200, 'San Jose', 'California', 34532, 'Denni', 'Balch', 'dbalch0@chron.com', '408-188-7449');
-insert into User (UserID, City, State, Zip, FirstName, LastName, Email, Phone)
 values (201, 'Saint Louis', 'Missouri', 38721, 'Cullin', 'Dmitr', 'cdmitr1@intel.com', '314-742-3952');
 insert into User (UserID, City, State, Zip, FirstName, LastName, Email, Phone)
 values (202, 'San Antonio', 'Texas', 35017, 'Kynthia', 'Brannigan', 'kbrannigan2@patch.com', '830-624-0647');
@@ -1948,7 +1946,7 @@ CREATE TABLE IF NOT EXISTS Property
         ON UPDATE CASCADE ON DELETE CASCADE,
     FOREIGN KEY (SellerUserID, SellerId) REFERENCES Seller (UserID, SellerID)
         ON UPDATE CASCADE ON DELETE SET NULL,
-    FOREIGN KEY (LandlordUserID, LandlordUserID) REFERENCES Landlord (UserID, LandlordID)
+    FOREIGN KEY (LandlordUserID, LandlordID) REFERENCES Landlord (UserID, LandlordID)
         ON UPDATE CASCADE ON DELETE SET NULL,
     PRIMARY KEY (PropertyID)
 );

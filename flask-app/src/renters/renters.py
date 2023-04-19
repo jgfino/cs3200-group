@@ -42,7 +42,7 @@ def get_property(propertyID):
 
 @renters.route('/properties/<userID>/<minPrice>/<maxPrice>', methods=['GET'])
 def get_properties_in_price_range(userID, minPrice, maxPrice):
-    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1} order by Market_Price'.format(
+    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1} and LandlordID is not NULL order by Market_Price'.format(
         minPrice, maxPrice)
     properties = do_query_data(q)
 

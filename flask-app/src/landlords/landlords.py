@@ -13,9 +13,10 @@ def get_landlords():
     return do_query(q)
 
 
-@landlords.route('/properties', methods=['GET'])
-def get_properties_landlord():
-    q = 'select Address, City, State, Zip, PropertyID from Property'
+@landlords.route('/properties/<UserID>', methods=['GET'])
+def get_properties_landlord(UserID):
+    q = 'select Address, City, State, Zip, PropertyID from Property where LandlordUserID = {0}'.format(
+        UserID)
     response = do_query_data(q)
 
     # this is for the dropdown
