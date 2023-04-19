@@ -23,10 +23,13 @@ def do_query(query, single_row=False):
 def do_query_data(query):
     cursor = db.get_db().cursor()
     cursor.execute(query)
+
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
-    return theData
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    return json_data
 
 
 def do_insert(query):

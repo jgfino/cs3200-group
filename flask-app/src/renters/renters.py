@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint, jsonify, make_response, request
 from src.queryhelper import do_query, do_delete, do_insert, do_query_data
 
 
@@ -12,11 +12,11 @@ def get_renters():
     q = 'select FirstName, LastName, User.UserID, RenterID from Renter join User on Renter.UserID = User.UserID'
     response = do_query_data(q)
 
-    # convert to array where {label: "First Last", value: "UserID"}
     # this is for the dropdown
     json_data = []
     for row in response:
-        json_data.append({'label': row[0] + ' ' + row[1], 'value': row[2]})
+        json_data.append(
+            {'label': row["FirstName"] + ' ' + row["LastName"], 'value': row["UserID"]})
     return json_data
 
 # Get renter details for renter with a particular userID
@@ -33,18 +33,40 @@ def get_renter(userID):
 
 @renters.route('/properties/<propertyID>', methods=['GET'])
 def get_property(propertyID):
-    q = 'select * from Property where PropertyID = {0}'.format(
+    q = 'select * from Property join Neighborhood on Neighborhood.NeighborhoodID = Property.NeighborhoodID join User on User.UserID = Property.LandlordID where PropertyID = {0} and Property.LandlordID is not NULL'.format(
         propertyID)
-    return do_query(q)
+    return do_query(q, True)
 
-# Story 2 - Get all properties in a price range
+# Story 2 - Get all properties in a price range, including favorite information
 
 
-@renters.route('/properties/<minPrice>/<maxPrice>', methods=['GET'])
-def get_properties_in_price_range(minPrice, maxPrice):
-    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1}'.format(
+@renters.route('/properties/<userID>/<minPrice>/<maxPrice>', methods=['GET'])
+def get_properties_in_price_range(userID, minPrice, maxPrice):
+    q = 'select * from Property where Market_Price >= {0} and Market_Price <= {1} order by Market_Price'.format(
         minPrice, maxPrice)
-    return do_query(q)
+    properties = do_query_data(q)
+
+    q2 = 'select PropertyID from Fav_Properties where UserID = {0}'.format(
+        userID)
+
+    initial_fav = do_query_data(q2)
+    fav_properties = []
+
+    for i in range(len(initial_fav)):
+        fav_properties.append(initial_fav[i]["PropertyID"])
+
+    # # if a property is in the user's favorites, add a field to the property
+    for i in range(len(properties)):
+        if properties[i]["PropertyID"] in fav_properties:
+            properties[i]["favorite"] = True
+        else:
+            properties[i]["favorite"] = False
+
+    the_response = make_response(jsonify(properties))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
 
 # Story 3 - Get neighborhood details for specific neighborhood
 
@@ -78,7 +100,7 @@ def get_videos(propertyID):
 
 @renters.route('/properties', methods=['GET'])
 def get_properties():
-    q = 'select PropertyID, Num_Bedrooms, Num_Bathrooms, Property.NeighborhoodID, NickName from Property join Neighborhood on Property.NeighborhoodID = Neighborhood.NeighborhoodID'
+    q = 'select PropertyID, Num_Bedrooms, Num_Bathrooms, Property.NeighborhoodID, NickName from Property join Neighborhood on Property.NeighborhoodID = Neighborhood.NeighborhoodID join User on Property.LandlordUserID = Landlord.UserID'
     return do_query(q)
 
 # Story 4 - Get lease information for a specific renter
@@ -109,14 +131,10 @@ def update_renter(userID):
 
 
 # Renters can favorite a property
-@renters.route('/favorites', methods=['POST'])
-def create_favorite():
-    req_data = request.get_json()
-    user_id = req_data['user_id']
-    property_id = req_data['property_id']
-
+@renters.route('/favorites/<userID>/<propertyID>', methods=['POST'])
+def create_favorite(userID, propertyID):
     q = 'insert into Fav_Properties (UserID, PropertyID) values ({0}, {1})'.format(
-        user_id, property_id)
+        userID, propertyID)
 
     do_insert(q)
 
@@ -125,14 +143,10 @@ def create_favorite():
 # Renters can delete a favorite property
 
 
-@renters.route('/favorites', methods=['DELETE'])
-def delete_favorite():
-    req_data = request.get_json()
-    user_id = req_data['user_id']
-    property_id = req_data['property_id']
-
+@renters.route('/favorites/<userID>/<propertyID>', methods=['DELETE'])
+def delete_favorite(userID, propertyID):
     q = 'delete from Fav_Properties where UserID = {0} and PropertyID = {1}'.format(
-        user_id, property_id)
+        userID, propertyID)
 
     do_delete(q)
 

@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from src.queryhelper import do_query, do_insert, do_delete
+from src.queryhelper import do_query, do_insert, do_delete, do_query_data
 
 
 landlords = Blueprint('landlords', __name__)
@@ -11,6 +11,19 @@ landlords = Blueprint('landlords', __name__)
 def get_landlords():
     q = 'select FirstName, LastName, User.UserID, LandlordID from Landlord join User on Landlord.UserID = User.UserID'
     return do_query(q)
+
+
+@landlords.route('/properties', methods=['GET'])
+def get_properties_landlord():
+    q = 'select Address, City, State, Zip, PropertyID from Property'
+    response = do_query_data(q)
+
+    # this is for the dropdown
+    json_data = []
+    for row in response:
+        json_data.append(
+            {'label': '{0}, {1}, {2} {3}'.format(row["Address"], row["City"], row["State"], row['Zip']), 'value': row["PropertyID"]})
+    return json_data
 
 # Get landlord details for landlord with a particular userID
 
@@ -34,17 +47,24 @@ def get_neighborhoods():
 
 @landlords.route('/renters', methods=['GET'])
 def get_renters():
-    q = 'select * from Renter'
-    return do_query(q)
+    q = 'select FirstName, LastName, User.UserID, RenterID from Renter join User on Renter.UserID = User.UserID'
+    return do_query_data(q)
 
 # Story 4 - get lease information for a specific landlord/update the dates of a lease/create a new lease/delete a lease
 
 
 @landlords.route('/leases/<UserID>/<LandlordID>', methods=['GET'])
 def get_leases(UserID, LandlordID):
-    q = 'select * from Lease where LandlordUserID = {0} and LandlordID = {1}'.format(
+    q = 'select * from Lease join Property on Property.PropertyID = Lease.PropertyID join User on User.UserID = Lease.RenterUserID where Lease.LandlordUserID = {0} and Lease.LandlordID = {1}'.format(
         UserID, LandlordID)
     return do_query(q)
+
+
+@landlords.route('/leaseDetails/<PropertyID>/<LeaseID>', methods=['GET'])
+def get_lease(PropertyID, LeaseID):
+    q = 'select * from Lease join Property on Property.PropertyID = Lease.PropertyID join User on User.UserID = Lease.RenterUserID join Neighborhood on Neighborhood.NeighborhoodID = Property.NeighborhoodID join Renter on Renter.UserID = Lease.RenterUserID where Lease.PropertyID = {0} and Lease.LeaseID = {1}'.format(
+        PropertyID, LeaseID)
+    return do_query(q, True)
 
 
 @landlords.route('/leases', methods=['POST'])
