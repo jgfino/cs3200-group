@@ -12,7 +12,7 @@ This repo contains:
 3. A Local AppSmith Server to show the UI compontents of the database.
 
 
-# Setting up and starting the Docker containters
+# Setting up and starting the Docker containers
 1. Clone this repository.
 2. 
 
