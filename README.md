@@ -6,13 +6,15 @@ Average Living seeks to challenge the status quo and create a truly flexible rea
 The main goal of this project is to design a database that will allow renters to find an apartment that fits their budget. Renters can browse through apartments, choose their favorites, and learn more about the amenities and neighborhood of each one. The database also gives landlords the ability to view all of their properties and manage each one. 
 
 # Project Structure
-This repo contains:
-1. A MySQL file that creates a database, inserts data, and pulls data.
+This repo contains 3 Docker containers:
+1. A MySQL container that creates a database, inserts data, and pulls data.
 2. A Python Flask container to implement a REST API.
-3. A Local AppSmith Server to show the UI compontents of the database.
+3. A Local AppSmith Server that shows pages for renters and landlords that users can interact with.
 
 
 # Setting up and starting the Docker containers
+**Important** - you need Docker Desktop installed
+
 1. Clone this repository.
 2. 
 
