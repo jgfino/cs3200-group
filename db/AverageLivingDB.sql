@@ -1916,7 +1916,7 @@ insert into Buyer (UserID, BuyerID, RoomPref)
 values (100, 100, 1);
 
 
-
+-- seller ID and Landlord Id starts from one
 DROP TABLE IF EXISTS Property;
 -- Create Property table
 CREATE TABLE IF NOT EXISTS Property
@@ -1956,503 +1956,503 @@ CREATE TABLE IF NOT EXISTS Property
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (1, 'House', 80517, 99, 1, 2, 'Schurz', 'Boston', 'Massachusetts', 37394, '68 Armistice Center', false, true,
-        true, false, false, false, true, 83, 300, 300, null, null);
+values (1, 'Apartment', 63182, 72, 1, 4, 'Packers', 'Bradenton', 'Florida', 45347, '10 Schurz Center', false, false,
+        true, false, true, true, true, 50, 300, 1, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (2, 'House', 312090, 77, 5, 3, 'Vidon', 'Seattle', 'Washington', 47358, '0 Forest Run Junction', true, true,
-        true, false, false, true, true, 24, 301, 301, null, null);
+values (2, 'House', 805520, 9, 4, 2, 'Southridge', 'Richmond', 'Virginia', 37903, '85894 Manufacturers Court', true,
+        true, true, true, true, false, true, 70, 301, 2, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (3, 'House', 43534, 9, 4, 4, 'Shopko', 'Washington', 'District of Columbia', 40089, '8888 Doe Crossing Park',
-        true, true, true, true, false, true, false, 87, 302, 302, null, null);
+values (3, 'Apartment', 865888, 41, 1, 4, 'North', 'Fort Lauderdale', 'Florida', 40690, '609 Badeau Plaza', true, false,
+        true, true, false, true, false, 20, 302, 3, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (4, 'Apartment', 690614, 72, 2, 1, 'West', 'Honolulu', 'Hawaii', 46561, '8 Bartillon Crossing', false, true,
-        false, true, true, true, false, 24, 303, 303, null, null);
+values (4, 'Apartment', 77066, 22, 4, 3, 'Larry', 'Monticello', 'Minnesota', 32773, '49 Northland Alley', false, false,
+        true, true, true, false, false, 30, 303, 4, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (5, 'House', 150579, 74, 1, 3, 'Upham', 'New York City', 'New York', 45238, '44423 Brown Pass', true, true,
-        false, false, false, true, true, 42, 304, 304, null, null);
+values (5, 'Apartment', 478614, 3, 5, 4, 'Mcbride', 'Crawfordsville', 'Indiana', 46671, '159 Lotheville Avenue', false,
+        false, false, true, false, false, false, 37, 304, 5, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (6, 'House', 376214, 57, 2, 4, 'Mayer', 'Vancouver', 'Washington', 46774, '4852 Pleasure Road', false, true,
-        false, true, false, true, true, 60, 305, 305, null, null);
+values (6, 'Apartment', 151291, 66, 3, 2, 'Kensington', 'Tulsa', 'Oklahoma', 39056, '52 Bashford Lane', true, false,
+        false, true, true, true, false, 69, 305, 6, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (7, 'Apartment', 521560, 7, 5, 2, 'Corscot', 'Ocala', 'Florida', 34685, '965 Fuller Point', false, false, false,
-        false, true, false, true, 16, 306, 306, null, null);
+values (7, 'House', 606950, 50, 2, 3, 'Buell', 'London', 'Kentucky', 52315, '66919 Porter Street', true, true, true,
+        true, true, true, true, 30, 306, 7, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (8, 'House', 980976, 2, 3, 2, 'Red Cloud', 'Boca Raton', 'Florida', 52404, '915 Sugar Parkway', true, true,
-        false, false, true, false, true, 31, 307, 307, null, null);
+values (8, 'House', 325869, 97, 1, 4, 'Ruskin', 'Billings', 'Montana', 37073, '44 Declaration Junction', false, true,
+        true, true, false, true, false, 14, 307, 8, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (9, 'Apartment', 242480, 5, 3, 4, 'Messerschmidt', 'Saint Petersburg', 'Florida', 41425,
-        '58999 Brickson Park Junction', false, true, false, false, false, true, true, 35, 308, 308, null, null);
+values (9, 'Apartment', 984553, 49, 5, 2, 'Sundown', 'Bakersfield', 'California', 38136, '614 Graedel Pass', false,
+        false, false, false, false, false, false, 95, 308, 9, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (10, 'Apartment', 107074, 65, 1, 2, 'Vidon', 'Grand Rapids', 'Michigan', 47724, '2 Fair Oaks Alley', true, false,
-        false, false, true, false, true, 36, 309, 309, null, null);
+values (10, 'House', 548448, 30, 3, 4, 'Hoepker', 'Greenville', 'South Carolina', 54553, '009 Marcy Avenue', false,
+        false, false, true, true, false, false, 87, 309, 10, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (11, 'House', 310434, 24, 2, 4, 'Nevada', 'Charlotte', 'North Carolina', 46654, '53257 Twin Pines Lane', true,
-        true, false, true, true, false, false, 58, 310, 310, null, null);
+values (11, 'Apartment', 374390, 79, 2, 3, 'Village Green', 'Wichita Falls', 'Texas', 41475, '28 Randy Avenue', true,
+        false, true, false, true, true, true, 92, 310, 11, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (12, 'Apartment', 164600, 16, 4, 3, 'Crest Line', 'Waterbury', 'Connecticut', 45008, '82199 Novick Way', true,
-        true, true, true, true, false, false, 24, 311, 311, null, null);
+values (12, 'Apartment', 577710, 3, 4, 4, 'Oneill', 'Columbia', 'Missouri', 44547, '01782 Graedel Junction', false,
+        false, false, false, false, false, true, 30, 311, 12, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (13, 'Apartment', 186353, 70, 1, 1, 'Anhalt', 'Santa Fe', 'New Mexico', 50046, '90 Bobwhite Road', true, false,
-        true, true, true, false, false, 59, 312, 312, null, null);
+values (13, 'House', 915987, 61, 5, 2, 'Debs', 'Dallas', 'Texas', 54412, '1481 Scofield Circle', false, false, false,
+        true, true, true, false, 57, 312, 13, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (14, 'House', 777968, 60, 2, 4, 'Toban', 'Tulsa', 'Oklahoma', 51929, '34137 Vahlen Hill', true, false, false,
-        true, false, true, false, 21, 313, 313, null, null);
+values (14, 'House', 472425, 52, 2, 2, 'Meadow Valley', 'Lancaster', 'Pennsylvania', 52127, '32 Hintze Alley', true,
+        false, true, false, false, true, true, 23, 313, 14, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (15, 'House', 198398, 50, 2, 2, 'Boyd', 'El Paso', 'Texas', 35709, '205 Dakota Place', false, false, true, false,
-        true, false, true, 77, 314, 314, null, null);
+values (15, 'House', 412477, 63, 3, 1, 'Northland', 'Fresno', 'California', 51092, '2699 Carpenter Hill', true, true,
+        false, false, true, false, true, 80, 314, 15, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (16, 'House', 139696, 60, 2, 2, 'Thackeray', 'Birmingham', 'Alabama', 37969, '8 Becker Street', true, true,
-        false, true, false, false, false, 61, 315, 315, null, null);
+values (16, 'Apartment', 459204, 19, 3, 2, 'Spenser', 'New Haven', 'Connecticut', 41830, '37851 Northport Parkway',
+        true, false, false, false, false, false, false, 42, 315, 16, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (17, 'Apartment', 471386, 13, 4, 2, 'Division', 'Fort Worth', 'Texas', 45635, '5068 Rutledge Lane', false, true,
-        true, true, false, true, true, 50, 316, 316, null, null);
+values (17, 'Apartment', 867407, 70, 2, 2, 'Magdeline', 'Prescott', 'Arizona', 40601, '3 Elgar Center', true, true,
+        false, false, true, true, true, 28, 316, 17, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (18, 'Apartment', 397092, 28, 3, 2, 'Basil', 'Lynn', 'Massachusetts', 41233, '4 Washington Park', false, true,
-        true, true, true, true, true, 78, 317, 317, null, null);
+values (18, 'Apartment', 891212, 63, 1, 3, 'Eastwood', 'Tucson', 'Arizona', 53463, '20 Miller Crossing', true, false,
+        true, true, false, false, false, 93, 317, 18, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (19, 'Apartment', 741857, 52, 1, 1, 'Farmco', 'San Mateo', 'California', 45854, '05 7th Road', false, true, true,
-        false, true, true, false, 29, 318, 318, null, null);
+values (19, 'Apartment', 494572, 20, 1, 4, 'Hollow Ridge', 'Oklahoma City', 'Oklahoma', 38150, '18 Schmedeman Way',
+        true, false, true, false, true, false, true, 68, 318, 19, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (20, 'House', 609573, 81, 2, 2, 'Parkside', 'Newark', 'New Jersey', 33677, '090 Pleasure Center', true, true,
-        false, true, false, false, false, 37, 319, 319, null, null);
+values (20, 'Apartment', 471804, 100, 5, 3, 'Sage', 'Sacramento', 'California', 53736, '2359 1st Trail', false, true,
+        false, false, true, true, true, 65, 319, 20, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (21, 'House', 649087, 93, 3, 2, 'Jenna', 'Tallahassee', 'Florida', 32529, '044 Randy Pass', false, true, true,
-        true, true, true, false, 85, 320, 320, null, null);
+values (21, 'Apartment', 419736, 73, 2, 1, 'Lakewood', 'Pittsburgh', 'Pennsylvania', 41498, '58980 Sunbrook Avenue',
+        true, false, false, true, false, false, true, 51, 320, 21, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (22, 'Apartment', 16302, 95, 3, 2, 'Homewood', 'Evansville', 'Indiana', 48129, '1 Buell Avenue', true, true,
-        false, false, false, true, true, 12, 321, 321, null, null);
+values (22, 'Apartment', 524482, 91, 5, 1, 'Corscot', 'San Francisco', 'California', 38416, '3 Main Junction', true,
+        false, false, true, true, true, false, 58, 321, 22, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (23, 'Apartment', 666819, 81, 2, 2, 'Hoepker', 'Youngstown', 'Ohio', 33567, '1766 Namekagon Crossing', false,
-        false, true, false, true, false, false, 51, 322, 322, null, null);
+values (23, 'Apartment', 439599, 72, 1, 4, 'Grayhawk', 'Santa Fe', 'New Mexico', 32309, '93 Farwell Circle', true, true,
+        true, false, false, true, true, 77, 322, 23, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (24, 'Apartment', 294366, 24, 1, 3, 'Packers', 'Reston', 'Virginia', 40646, '66316 Forster Trail', true, true,
-        true, true, true, false, false, 47, 323, 323, null, null);
+values (24, 'House', 477598, 27, 2, 4, 'Hollow Ridge', 'Nashville', 'Tennessee', 44573, '92304 Namekagon Lane', true,
+        true, true, true, true, true, false, 76, 323, 24, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (25, 'House', 8822, 50, 5, 1, 'Pine View', 'Alexandria', 'Louisiana', 53933, '4 Heath Alley', false, true, false,
-        false, true, true, false, 33, 324, 324, null, null);
+values (25, 'House', 989724, 30, 2, 3, 'Banding', 'Bradenton', 'Florida', 42788, '4 Express Parkway', false, true,
+        false, true, false, false, false, 39, 324, 25, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (26, 'Apartment', 297308, 16, 4, 1, 'Acker', 'Grand Rapids', 'Michigan', 42552, '65221 Bashford Hill', true,
-        false, false, true, true, true, true, 58, 325, 325, null, null);
+values (26, 'Apartment', 463487, 60, 5, 2, 'Luster', 'Washington', 'District of Columbia', 34331, '3 Leroy Avenue',
+        true, true, true, false, false, false, true, 86, 325, 26, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (27, 'Apartment', 721078, 79, 2, 2, 'Monica', 'Austin', 'Texas', 48723, '30 Dayton Center', true, true, true,
-        false, true, true, true, 33, 326, 326, null, null);
+values (27, 'Apartment', 791354, 47, 3, 1, 'Sunnyside', 'Philadelphia', 'Pennsylvania', 47326, '4080 Ridgeview Pass',
+        true, false, false, false, true, false, true, 34, 326, 27, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (28, 'House', 410306, 58, 3, 1, 'Burning Wood', 'Dallas', 'Texas', 49346, '0 Bultman Terrace', false, false,
-        true, false, false, false, false, 92, 327, 327, null, null);
+values (28, 'House', 595647, 66, 3, 1, 'Buhler', 'Corpus Christi', 'Texas', 38856, '114 Dryden Crossing', true, false,
+        false, false, true, false, true, 29, 327, 28, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (29, 'Apartment', 540499, 19, 3, 4, 'South', 'Cincinnati', 'Ohio', 54704, '23 Dahle Plaza', true, true, true,
-        false, false, true, true, 94, 328, 328, null, null);
+values (29, 'Apartment', 949390, 16, 2, 2, 'Hovde', 'Cedar Rapids', 'Iowa', 42764, '3 Banding Road', false, true, false,
+        false, true, true, true, 16, 328, 29, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (30, 'House', 59392, 81, 3, 4, 'Shopko', 'Miami', 'Florida', 36679, '6681 Killdeer Circle', false, true, true,
-        true, false, false, false, 84, 329, 329, null, null);
+values (30, 'Apartment', 562046, 78, 4, 4, 'Randy', 'Sacramento', 'California', 46717, '0942 Dovetail Place', false,
+        true, true, true, false, true, true, 28, 329, 30, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (31, 'House', 419313, 45, 1, 1, 'Eagan', 'Salt Lake City', 'Utah', 50594, '7929 Merrick Parkway', true, true,
-        false, false, false, true, true, 97, 330, 330, null, null);
+values (31, 'Apartment', 130171, 66, 4, 4, 'Dahle', 'Nashville', 'Tennessee', 34772, '01437 Colorado Lane', true, true,
+        true, false, true, false, true, 34, 330, 31, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (32, 'Apartment', 316481, 83, 1, 1, 'Hansons', 'San Diego', 'California', 42873, '60059 Menomonie Center', false,
-        true, false, true, true, false, true, 25, 331, 331, null, null);
+values (32, 'Apartment', 943014, 99, 5, 4, 'Forest', 'Washington', 'District of Columbia', 42377,
+        '6217 Delladonna Circle', true, true, false, true, false, true, true, 23, 331, 32, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (33, 'House', 319315, 73, 2, 3, 'Corry', 'Charlotte', 'North Carolina', 50029, '7083 Anderson Street', true,
-        true, false, true, false, true, false, 35, 332, 332, null, null);
+values (33, 'House', 956997, 71, 4, 3, 'Meadow Ridge', 'Bakersfield', 'California', 33559, '56057 Bultman Park', false,
+        true, false, true, false, true, true, 5, 332, 33, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (34, 'Apartment', 757797, 46, 4, 1, 'Messerschmidt', 'Arlington', 'Virginia', 50891, '5834 Warner Place', true,
-        true, true, false, true, true, true, 51, 333, 333, null, null);
+values (34, 'House', 406320, 34, 3, 4, 'North', 'Mobile', 'Alabama', 49005, '11 Briar Crest Drive', true, false, true,
+        false, true, false, true, 35, 333, 34, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (35, 'House', 913712, 98, 3, 3, 'Karstens', 'Philadelphia', 'Pennsylvania', 52075, '02071 Park Meadow Park',
-        false, false, true, false, false, true, true, 3, 334, 334, null, null);
+values (35, 'Apartment', 347165, 45, 5, 2, 'Clove', 'Houston', 'Texas', 55018, '09910 Eastwood Park', true, true, true,
+        true, true, true, true, 11, 334, 35, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (36, 'House', 744691, 47, 3, 1, 'Garrison', 'Portland', 'Oregon', 40684, '41772 Memorial Crossing', true, true,
-        false, true, true, false, true, 29, 335, 335, null, null);
+values (36, 'Apartment', 737947, 17, 4, 2, 'Pennsylvania', 'Wilmington', 'North Carolina', 34226, '64938 Bashford Road',
+        false, false, false, false, true, true, true, 69, 335, 36, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (37, 'Apartment', 871731, 8, 2, 4, 'Merchant', 'Sterling', 'Virginia', 51128, '45338 Claremont Avenue', false,
-        true, true, true, true, true, true, 41, 336, 336, null, null);
+values (37, 'Apartment', 236014, 25, 2, 2, 'Dawn', 'Las Vegas', 'Nevada', 40595, '77 Kingsford Road', true, false,
+        false, false, false, false, false, 56, 336, 37, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (38, 'House', 865633, 48, 4, 1, 'Utah', 'North Las Vegas', 'Nevada', 33081, '799 Crescent Oaks Way', true, false,
-        false, false, false, true, false, 32, 337, 337, null, null);
+values (38, 'Apartment', 809776, 37, 3, 1, 'Roth', 'Lansing', 'Michigan', 50473, '506 Texas Junction', true, true,
+        false, true, false, true, false, 30, 337, 38, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (39, 'House', 264922, 91, 2, 1, 'Fairview', 'Arlington', 'Virginia', 49856, '46134 Comanche Drive', true, true,
-        false, true, false, false, true, 7, 338, 338, null, null);
+values (39, 'House', 350113, 64, 2, 2, 'Bunker Hill', 'Charlotte', 'North Carolina', 34093, '700 Anderson Pass', true,
+        false, true, false, false, true, false, 93, 338, 39, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (40, 'House', 117258, 7, 1, 1, 'Sheridan', 'Philadelphia', 'Pennsylvania', 41103, '970 Shasta Drive', false,
-        true, true, true, true, false, false, 73, 339, 339, null, null);
+values (40, 'Apartment', 64167, 57, 2, 3, 'Clyde Gallagher', 'Austin', 'Texas', 35244, '80 Nobel Plaza', true, true,
+        true, false, false, false, true, 10, 339, 40, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (41, 'House', 590408, 55, 2, 2, 'Hanover', 'Chattanooga', 'Tennessee', 49508, '8965 Dixon Pass', false, true,
-        true, false, false, false, true, 66, 340, 340, null, null);
+values (41, 'Apartment', 649351, 22, 4, 2, 'Service', 'Miami', 'Florida', 37288, '4071 Crescent Oaks Court', true,
+        false, true, true, true, true, true, 19, 340, 41, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (42, 'Apartment', 958417, 4, 2, 2, 'Tennessee', 'New Orleans', 'Louisiana', 50962, '959 Chive Way', true, false,
-        true, true, true, false, true, 78, 341, 341, null, null);
+values (42, 'Apartment', 879808, 3, 5, 4, 'Village', 'Kalamazoo', 'Michigan', 54851, '8489 Chive Parkway', false, true,
+        false, false, false, true, true, 17, 341, 42, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (43, 'House', 56677, 56, 1, 3, 'Troy', 'Los Angeles', 'California', 45301, '41 Eagle Crest Road', true, true,
-        true, false, false, true, true, 96, 342, 342, null, null);
+values (43, 'House', 188953, 4, 3, 3, 'Lotheville', 'El Paso', 'Texas', 49571, '3 Holmberg Place', false, false, false,
+        true, false, false, true, 58, 342, 43, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (44, 'Apartment', 379403, 19, 4, 1, 'Prairie Rose', 'Toledo', 'Ohio', 36616, '0 Schmedeman Center', true, true,
-        false, false, false, true, false, 3, 343, 343, null, null);
+values (44, 'Apartment', 269384, 77, 5, 4, 'Fremont', 'Cincinnati', 'Ohio', 45118, '99 Vermont Point', true, false,
+        false, true, true, false, true, 32, 343, 44, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (45, 'Apartment', 932782, 78, 2, 4, 'David', 'Atlanta', 'Georgia', 36079, '7 Old Gate Pass', false, true, false,
-        true, true, true, true, 23, 344, 344, null, null);
+values (45, 'House', 568643, 21, 3, 3, 'Elka', 'Knoxville', 'Tennessee', 35764, '5734 Bayside Park', true, true, true,
+        true, true, false, false, 96, 344, 45, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (46, 'House', 524102, 51, 5, 2, 'Warrior', 'Birmingham', 'Alabama', 43921, '507 Merrick Hill', false, false,
-        false, false, true, true, true, 96, 345, 345, null, null);
+values (46, 'House', 63665, 9, 2, 1, 'Dapin', 'Albuquerque', 'New Mexico', 54774, '2418 Merchant Trail', false, false,
+        false, false, true, true, true, 52, 345, 46, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (47, 'Apartment', 723309, 28, 5, 4, 'School', 'Baltimore', 'Maryland', 54476, '63 Susan Pass', false, false,
-        true, false, false, false, true, 44, 346, 346, null, null);
+values (47, 'House', 472580, 98, 3, 3, 'Shoshone', 'Rochester', 'New York', 34078, '44753 Westridge Avenue', true, true,
+        true, false, true, false, false, 80, 346, 47, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (48, 'Apartment', 722124, 22, 5, 2, 'Superior', 'San Bernardino', 'California', 43780, '43625 Mitchell Court',
-        true, false, false, true, false, false, true, 86, 347, 347, null, null);
+values (48, 'House', 379663, 23, 4, 1, 'Mendota', 'Orlando', 'Florida', 51871, '88444 Oak Parkway', true, true, false,
+        true, false, false, false, 20, 347, 48, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (49, 'House', 500468, 86, 3, 2, 'Eliot', 'Arlington', 'Virginia', 34308, '946 Comanche Street', false, true,
-        false, true, true, true, true, 87, 348, 348, null, null);
+values (49, 'Apartment', 281250, 46, 2, 4, 'Kedzie', 'Washington', 'District of Columbia', 35087, '91043 Dennis Alley',
+        false, false, true, true, true, false, false, 45, 348, 49, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (50, 'Apartment', 155258, 47, 5, 3, 'Bay', 'El Paso', 'Texas', 32917, '6 Mosinee Point', false, false, false,
-        false, true, true, false, 58, 349, 349, null, null);
+values (50, 'House', 706873, 97, 1, 1, 'Porter', 'Springfield', 'Illinois', 48249, '4828 Mitchell Center', false, false,
+        true, false, false, true, true, 73, 349, 50, null, null);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (51, 'House', 808678, 61, 5, 2, 'Wayridge', 'Tacoma', 'Washington', 36507, '6 Del Sol Road', false, true, true,
-        false, true, false, false, 99, null, null, 200, 200);
+values (51, 'House', 999598, 72, 5, 4, 'Crowley', 'Baton Rouge', 'Louisiana', 45994, '81 Division Point', true, true,
+        true, false, false, true, true, 54, null, null, 200, 1);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (52, 'House', 432153, 96, 2, 2, 'Londonderry', 'Philadelphia', 'Pennsylvania', 38934, '41 Welch Point', true,
-        false, false, false, true, false, true, 96, null, null, 201, 201);
+values (52, 'Apartment', 135325, 96, 4, 3, 'Redwing', 'Pittsburgh', 'Pennsylvania', 52681, '6923 Bowman Court', true,
+        false, true, true, true, false, true, 45, null, null, 201, 2);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (53, 'Apartment', 271160, 97, 3, 1, 'Butterfield', 'Los Angeles', 'California', 41245, '0386 Cottonwood Drive',
-        true, true, false, true, false, true, true, 46, null, null, 202, 202);
+values (53, 'House', 354875, 46, 5, 1, 'Hermina', 'Iowa City', 'Iowa', 51065, '91548 Reinke Court', true, false, true,
+        true, true, true, false, 26, null, null, 202, 3);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (54, 'Apartment', 466221, 85, 3, 1, 'Main', 'Beaumont', 'Texas', 43300, '3 Brown Drive', false, true, true, true,
-        true, false, true, 59, null, null, 203, 203);
+values (54, 'Apartment', 438768, 63, 2, 4, 'Troy', 'Los Angeles', 'California', 45140, '4517 Oakridge Point', false,
+        true, true, true, true, true, true, 10, null, null, 203, 4);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (55, 'House', 785335, 95, 1, 4, 'Northwestern', 'Dallas', 'Texas', 45203, '8774 Northport Terrace', false, true,
-        false, true, false, false, true, 92, null, null, 204, 204);
+values (55, 'Apartment', 978985, 14, 2, 4, 'Bartelt', 'Philadelphia', 'Pennsylvania', 35450, '807 Nancy Crossing',
+        false, false, false, true, true, true, false, 57, null, null, 204, 5);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (56, 'House', 974292, 5, 2, 4, 'Oak Valley', 'Washington', 'District of Columbia', 37072, '8 Browning Way',
-        false, false, false, true, true, true, true, 81, null, null, 205, 205);
+values (56, 'House', 115029, 85, 4, 4, 'Lillian', 'Orlando', 'Florida', 50271, '43359 Golden Leaf Plaza', false, false,
+        true, false, true, false, false, 23, null, null, 205, 6);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (57, 'Apartment', 32493, 83, 4, 4, 'Schmedeman', 'Hollywood', 'Florida', 53809, '0 Rusk Court', true, true, true,
-        false, true, false, true, 15, null, null, 206, 206);
+values (57, 'Apartment', 758216, 68, 4, 3, 'Hovde', 'New York City', 'New York', 41107, '5118 Judy Pass', false, true,
+        false, false, true, true, false, 31, null, null, 206, 7);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (58, 'House', 372804, 11, 5, 3, 'Acker', 'Charleston', 'South Carolina', 40417, '2274 Norway Maple Junction',
-        false, false, true, true, true, true, false, 47, null, null, 207, 207);
+values (58, 'House', 6513, 99, 3, 4, 'Columbus', 'San Antonio', 'Texas', 39574, '3379 Birchwood Place', true, false,
+        true, true, true, false, false, 86, null, null, 207, 8);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (59, 'House', 634607, 36, 3, 4, 'Lotheville', 'Las Vegas', 'Nevada', 44541, '62 Miller Street', true, true, true,
-        false, true, true, true, 19, null, null, 208, 208);
+values (59, 'Apartment', 433871, 76, 5, 1, 'Schurz', 'Van Nuys', 'California', 52217, '43340 Forest Dale Avenue', true,
+        true, true, true, false, true, false, 19, null, null, 208, 9);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (60, 'Apartment', 174589, 32, 1, 4, 'Express', 'Shreveport', 'Louisiana', 47229, '0230 Bartillon Court', true,
-        false, true, true, true, false, true, 54, null, null, 209, 209);
+values (60, 'House', 98267, 60, 4, 4, 'Cordelia', 'Huntington', 'West Virginia', 50357, '32673 Lerdahl Pass', false,
+        false, true, false, false, false, true, 78, null, null, 209, 10);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (61, 'Apartment', 155966, 61, 1, 3, 'Chinook', 'Los Angeles', 'California', 52621, '3982 Hooker Place', false,
-        true, true, true, true, true, false, 38, null, null, 210, 210);
+values (61, 'Apartment', 601892, 13, 2, 1, 'Manley', 'San Jose', 'California', 45205, '61 Laurel Park', true, true,
+        true, false, false, false, true, 89, null, null, 210, 11);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (62, 'House', 10988, 47, 1, 1, 'Goodland', 'Fort Lauderdale', 'Florida', 39273, '4 Dexter Trail', true, true,
-        false, true, true, true, false, 5, null, null, 211, 211);
+values (62, 'Apartment', 819868, 89, 3, 4, 'Eastwood', 'Detroit', 'Michigan', 39725, '8 Boyd Alley', true, true, true,
+        true, true, false, false, 61, null, null, 211, 12);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (63, 'Apartment', 155474, 14, 4, 2, 'Kingsford', 'Schenectady', 'New York', 46904, '0 Crownhardt Alley', false,
-        true, true, false, true, true, false, 55, null, null, 212, 212);
+values (63, 'Apartment', 315950, 62, 5, 1, 'Summit', 'Rochester', 'New York', 35090, '152 Montana Avenue', true, true,
+        true, true, true, true, false, 71, null, null, 212, 13);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (64, 'Apartment', 747635, 10, 2, 4, 'Amoth', 'El Paso', 'Texas', 38212, '97 Sage Circle', false, false, false,
-        false, false, false, true, 99, null, null, 213, 213);
+values (64, 'House', 938685, 59, 4, 3, 'Towne', 'Oklahoma City', 'Oklahoma', 45463, '98586 Heffernan Road', true, true,
+        true, false, false, true, true, 87, null, null, 213, 14);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (65, 'House', 156317, 73, 1, 4, 'Bartillon', 'Gilbert', 'Arizona', 39016, '5 Sloan Way', true, true, true, false,
-        true, false, false, 34, null, null, 214, 214);
+values (65, 'House', 455084, 89, 2, 3, 'Kropf', 'Los Angeles', 'California', 53787, '60601 Glendale Avenue', false,
+        true, false, true, false, true, false, 73, null, null, 214, 15);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (66, 'House', 654055, 30, 5, 2, 'Lindbergh', 'Stamford', 'Connecticut', 39055, '2 Loomis Terrace', false, true,
-        true, false, true, false, false, 79, null, null, 215, 215);
+values (66, 'Apartment', 463388, 99, 4, 4, 'Mcguire', 'Oklahoma City', 'Oklahoma', 52820, '598 Old Gate Place', false,
+        true, true, true, false, true, false, 79, null, null, 215, 16);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (67, 'House', 85507, 28, 4, 4, 'Mcbride', 'Van Nuys', 'California', 40684, '5809 Marquette Road', false, false,
-        true, false, true, false, false, 90, null, null, 216, 216);
+values (67, 'Apartment', 659723, 92, 3, 4, 'Hooker', 'Philadelphia', 'Pennsylvania', 48573, '613 Kennedy Center', true,
+        false, false, false, false, false, true, 10, null, null, 216, 17);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (68, 'House', 925129, 29, 1, 4, 'Schurz', 'Charleston', 'West Virginia', 38619, '9 Towne Alley', true, false,
-        false, true, false, false, false, 26, null, null, 217, 217);
+values (68, 'Apartment', 855726, 16, 5, 3, 'High Crossing', 'Springfield', 'Massachusetts', 52060, '18483 Aberg Lane',
+        false, false, false, false, false, true, true, 87, null, null, 217, 18);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (69, 'House', 820865, 89, 5, 1, 'Center', 'Austin', 'Texas', 52809, '331 Tennessee Point', true, false, false,
-        true, false, false, true, 11, null, null, 218, 218);
+values (69, 'House', 932835, 89, 2, 1, 'Hanover', 'New York City', 'New York', 38673, '4774 Claremont Plaza', false,
+        true, true, false, false, false, false, 25, null, null, 218, 19);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (70, 'Apartment', 342239, 42, 5, 1, 'Amoth', 'San Jose', 'California', 36980, '8009 Mcguire Road', false, false,
-        false, false, false, true, false, 63, null, null, 219, 219);
+values (70, 'Apartment', 126772, 87, 4, 4, 'Meadow Vale', 'Tulsa', 'Oklahoma', 50249, '14418 Rusk Junction', false,
+        false, true, true, true, false, true, 95, null, null, 219, 20);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (71, 'House', 335237, 21, 2, 1, 'Ridge Oak', 'Oklahoma City', 'Oklahoma', 43459, '54912 Sutteridge Crossing',
-        true, true, true, false, false, true, false, 87, null, null, 220, 220);
+values (71, 'Apartment', 559761, 92, 5, 1, 'Bunting', 'Kansas City', 'Missouri', 43995, '23479 Blackbird Crossing',
+        true, false, true, false, true, false, true, 32, null, null, 220, 21);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (72, 'House', 121991, 89, 3, 1, 'Vahlen', 'Milwaukee', 'Wisconsin', 47747, '0502 Hazelcrest Avenue', true, true,
-        false, true, false, false, true, 93, null, null, 221, 221);
+values (72, 'Apartment', 655863, 9, 2, 1, 'Ridgeway', 'Tacoma', 'Washington', 48703, '382 Packers Crossing', true,
+        false, true, false, true, false, false, 47, null, null, 221, 22);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (73, 'House', 56803, 58, 1, 1, 'Columbus', 'Lexington', 'Kentucky', 38919, '543 Mallory Center', true, false,
-        true, false, false, true, true, 20, null, null, 222, 222);
+values (73, 'House', 766270, 66, 5, 2, 'Talmadge', 'Oklahoma City', 'Oklahoma', 53504, '42 Dorton Drive', false, true,
+        true, false, false, true, false, 35, null, null, 222, 23);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (74, 'Apartment', 650931, 86, 2, 1, '2nd', 'Charleston', 'West Virginia', 35934, '66 Butterfield Park', true,
-        false, false, true, true, true, true, 78, null, null, 223, 223);
+values (74, 'House', 431529, 96, 4, 3, 'Elka', 'Knoxville', 'Tennessee', 42656, '01 Heath Pass', false, true, true,
+        false, true, false, true, 4, null, null, 223, 24);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (75, 'Apartment', 843457, 37, 4, 3, 'Lawn', 'Baton Rouge', 'Louisiana', 46780, '0 Morrow Point', true, false,
-        true, false, false, false, true, 47, null, null, 224, 224);
+values (75, 'Apartment', 682918, 75, 2, 3, 'Union', 'Houston', 'Texas', 39992, '57 Becker Avenue', false, false, true,
+        false, false, false, true, 86, null, null, 224, 25);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (76, 'Apartment', 463644, 78, 4, 3, 'Warner', 'Mesa', 'Arizona', 54997, '1 Hanover Park', true, false, true,
-        false, false, true, true, 71, null, null, 225, 225);
+values (76, 'House', 594579, 37, 5, 4, 'Grover', 'Tyler', 'Texas', 35213, '8370 Surrey Crossing', false, false, false,
+        false, true, true, false, 21, null, null, 225, 26);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (77, 'Apartment', 825643, 37, 3, 2, 'Badeau', 'Kansas City', 'Missouri', 50991, '781 Pennsylvania Avenue', true,
-        false, false, true, false, true, true, 89, null, null, 226, 226);
+values (77, 'House', 542081, 80, 2, 1, 'Oneill', 'San Angelo', 'Texas', 35287, '831 Fairview Avenue', false, true,
+        false, false, true, true, false, 82, null, null, 226, 27);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (78, 'House', 435980, 18, 2, 1, 'Shasta', 'Jeffersonville', 'Indiana', 40165, '1 Transport Plaza', false, true,
-        true, true, false, true, true, 30, null, null, 227, 227);
+values (78, 'Apartment', 343740, 46, 1, 4, '2nd', 'Athens', 'Georgia', 39217, '35056 Arkansas Court', false, true, true,
+        false, true, false, false, 13, null, null, 227, 28);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (79, 'House', 799522, 97, 3, 1, 'Hooker', 'Montgomery', 'Alabama', 47203, '282 Grim Place', true, false, true,
-        false, false, true, false, 27, null, null, 228, 228);
+values (79, 'Apartment', 86714, 79, 4, 2, 'Elmside', 'Tucson', 'Arizona', 42965, '44493 Debs Court', true, true, true,
+        false, true, true, false, 23, null, null, 228, 29);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (80, 'House', 964450, 11, 3, 1, 'Northwestern', 'Bronx', 'New York', 51675, '7 Montana Parkway', true, true,
-        true, true, false, false, true, 93, null, null, 229, 229);
+values (80, 'Apartment', 934649, 85, 3, 3, 'Petterle', 'Columbus', 'Georgia', 46442, '071 Eastlawn Drive', false, true,
+        false, false, true, true, false, 64, null, null, 229, 30);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (81, 'House', 967819, 88, 1, 3, 'Onsgard', 'Austin', 'Texas', 43031, '0 Farwell Terrace', false, true, false,
-        true, true, false, false, 80, null, null, 230, 230);
+values (81, 'House', 955935, 64, 3, 1, 'Ridgeway', 'Corpus Christi', 'Texas', 50093, '70374 Tennyson Avenue', false,
+        true, false, false, true, true, true, 1, null, null, 230, 31);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (82, 'Apartment', 39220, 13, 2, 4, 'Emmet', 'Sioux City', 'Iowa', 54350, '77 Forster Drive', true, false, false,
-        true, false, true, true, 8, null, null, 231, 231);
+values (82, 'Apartment', 179424, 86, 4, 3, 'Gulseth', 'Las Vegas', 'Nevada', 53399, '93 Meadow Vale Place', false,
+        false, false, true, false, true, false, 5, null, null, 231, 32);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (83, 'Apartment', 420175, 100, 3, 3, 'Onsgard', 'Bryan', 'Texas', 54370, '9 Mcbride Center', false, true, true,
-        true, true, true, false, 93, null, null, 232, 232);
+values (83, 'House', 155211, 99, 4, 3, 'Glendale', 'Hyattsville', 'Maryland', 42681, '93700 Dorton Plaza', true, false,
+        true, true, false, false, true, 91, null, null, 232, 33);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (84, 'House', 34799, 1, 2, 3, 'Hoffman', 'Arlington', 'Texas', 47453, '672 Dapin Point', false, true, false,
-        false, false, false, true, 75, null, null, 233, 233);
+values (84, 'House', 723352, 89, 3, 1, 'Cambridge', 'New Haven', 'Connecticut', 40656, '1549 Spenser Terrace', false,
+        false, false, false, true, true, true, 94, null, null, 233, 34);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (85, 'Apartment', 312748, 74, 2, 1, 'Spohn', 'Cleveland', 'Ohio', 53653, '9 Acker Street', true, true, true,
-        true, true, true, false, 94, null, null, 234, 234);
+values (85, 'House', 671934, 50, 4, 1, 'Anthes', 'Modesto', 'California', 36669, '29886 Vernon Terrace', true, false,
+        false, true, false, true, false, 79, null, null, 234, 35);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (86, 'Apartment', 331483, 12, 2, 3, 'Almo', 'Nashville', 'Tennessee', 50840, '0 Dunning Center', true, false,
-        true, true, true, true, false, 91, null, null, 235, 235);
+values (86, 'Apartment', 877802, 11, 4, 1, 'Little Fleur', 'Las Vegas', 'Nevada', 38303, '3322 Clyde Gallagher Hill',
+        true, true, false, true, true, true, false, 78, null, null, 235, 36);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (87, 'Apartment', 701205, 26, 3, 4, 'Swallow', 'El Paso', 'Texas', 36121, '3 Stone Corner Drive', false, false,
-        false, false, false, true, true, 87, null, null, 236, 236);
+values (87, 'House', 759007, 16, 4, 2, 'Welch', 'Providence', 'Rhode Island', 40412, '2009 Nobel Way', true, true,
+        false, false, true, true, false, 36, null, null, 236, 37);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (88, 'Apartment', 119555, 2, 2, 3, '8th', 'Birmingham', 'Alabama', 40835, '0811 Arizona Pass', true, false, true,
-        true, true, true, true, 10, null, null, 237, 237);
+values (88, 'House', 48082, 11, 1, 2, 'Reinke', 'New York City', 'New York', 51320, '0 Loftsgordon Center', true, false,
+        true, true, true, true, true, 58, null, null, 237, 38);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (89, 'House', 213570, 37, 4, 4, 'Kinsman', 'Harrisburg', 'Pennsylvania', 42064, '14403 Mesta Lane', false, false,
-        false, true, false, true, false, 77, null, null, 238, 238);
+values (89, 'Apartment', 352686, 80, 5, 1, 'Hazelcrest', 'Jersey City', 'New Jersey', 39435, '428 Rigney Terrace', true,
+        false, false, false, true, false, true, 30, null, null, 238, 39);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (90, 'Apartment', 925968, 41, 5, 2, 'Rutledge', 'Knoxville', 'Tennessee', 45495, '84 Mcguire Center', true, true,
-        false, true, true, true, false, 68, null, null, 239, 239);
+values (90, 'Apartment', 900370, 61, 1, 3, 'Ilene', 'Fort Wayne', 'Indiana', 33074, '247 5th Park', false, true, true,
+        true, false, true, true, 64, null, null, 239, 40);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (91, 'Apartment', 733388, 38, 5, 1, 'Hooker', 'Scottsdale', 'Arizona', 35931, '49900 Springs Alley', false, true,
-        true, true, true, false, true, 99, null, null, 240, 240);
+values (91, 'House', 609994, 91, 5, 3, 'Algoma', 'Sarasota', 'Florida', 35712, '8000 Del Sol Trail', false, false,
+        false, true, false, true, true, 52, null, null, 240, 41);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (92, 'Apartment', 777081, 65, 2, 3, 'Almo', 'San Luis Obispo', 'California', 43004, '50194 Chive Junction', true,
-        false, true, true, true, true, true, 51, null, null, 241, 241);
+values (92, 'House', 40443, 50, 2, 3, 'Hansons', 'Tulsa', 'Oklahoma', 39278, '6406 Talisman Point', true, true, true,
+        false, true, false, true, 50, null, null, 241, 42);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (93, 'Apartment', 267560, 22, 4, 1, 'Briar Crest', 'Winston Salem', 'North Carolina', 39610, '51 Melody Circle',
-        false, true, false, true, true, false, false, 55, null, null, 242, 242);
+values (93, 'Apartment', 12995, 22, 5, 3, 'Clarendon', 'North Little Rock', 'Arkansas', 46019, '99 Melby Hill', false,
+        false, false, false, false, false, false, 58, null, null, 242, 43);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (94, 'Apartment', 157960, 76, 3, 2, 'Lakewood', 'Honolulu', 'Hawaii', 49475, '97 Mccormick Alley', true, true,
-        false, true, false, true, false, 83, null, null, 243, 243);
+values (94, 'Apartment', 555971, 54, 1, 4, 'Merchant', 'Winston Salem', 'North Carolina', 53732, '5 Ludington Plaza',
+        true, false, true, false, false, false, false, 34, null, null, 243, 44);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (95, 'House', 78677, 93, 3, 1, 'Daystar', 'Columbia', 'South Carolina', 42352, '584 Main Junction', true, true,
-        true, false, true, false, true, 42, null, null, 244, 244);
+values (95, 'Apartment', 428682, 73, 5, 2, 'Mallard', 'Pasadena', 'California', 40938, '82914 Dixon Trail', true, true,
+        false, false, true, false, false, 94, null, null, 244, 45);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (96, 'Apartment', 206614, 48, 1, 2, 'Northridge', 'Clearwater', 'Florida', 54812, '5 2nd Hill', false, true,
-        false, false, false, true, true, 39, null, null, 245, 245);
+values (96, 'Apartment', 252257, 58, 2, 2, 'Anderson', 'Washington', 'District of Columbia', 42672, '32025 Roth Park',
+        false, false, false, true, false, false, true, 21, null, null, 245, 46);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (97, 'House', 426358, 38, 2, 4, 'Roth', 'Pittsburgh', 'Pennsylvania', 36687, '63369 Ridgeview Pass', false, true,
-        false, false, true, true, false, 85, null, null, 246, 246);
+values (97, 'Apartment', 784612, 95, 3, 2, 'Bowman', 'Frederick', 'Maryland', 52411, '0 Park Meadow Lane', false, false,
+        true, true, false, true, false, 74, null, null, 246, 47);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (98, 'Apartment', 83243, 87, 2, 4, 'Talmadge', 'Columbia', 'South Carolina', 51502, '83 Lien Park', false, false,
-        false, false, true, false, true, 74, null, null, 247, 247);
+values (98, 'Apartment', 328587, 6, 5, 3, 'Bonner', 'Wichita', 'Kansas', 50357, '1 Debs Road', false, false, true, true,
+        true, true, true, 37, null, null, 247, 48);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (99, 'Apartment', 223142, 90, 5, 3, 'Annamark', 'El Paso', 'Texas', 46433, '3 Fallview Court', false, false,
-        false, false, false, false, false, 32, null, null, 248, 248);
+values (99, 'House', 370524, 96, 1, 2, 'Gateway', 'Chicago', 'Illinois', 41986, '2565 Melby Way', true, false, true,
+        true, false, true, false, 31, null, null, 248, 49);
 insert into Property (propertyid, property_type, market_price, school_distance, num_bedrooms, num_bathrooms, street,
                       city, state, zip, address, furnished, electricinc, gasinc, trashinc, pets_allowed, washerdryer,
                       ac, neighborhoodid, selleruserid, sellerid, LandlordUserID, LandlordID)
-values (100, 'House', 910524, 76, 5, 2, 'Lindbergh', 'Philadelphia', 'Pennsylvania', 46040, '05054 Nelson Center',
-        false, true, false, true, true, true, true, 36, null, null, 249, 249);
+values (100, 'House', 602497, 22, 1, 4, 'Burning Wood', 'Dallas', 'Texas', 51555, '9 Londonderry Trail', false, true,
+        false, true, false, true, true, 34, null, null, 249, 50);
 
 
 
@@ -2466,108 +2466,208 @@ CREATE TABLE Fav_Properties
     PRIMARY KEY (UserID, PropertyID)
 );
 
-insert into Fav_Properties (UserID, PropertyID) values (1, 9);
-insert into Fav_Properties (UserID, PropertyID) values (2, 10);
-insert into Fav_Properties (UserID, PropertyID) values (3, 11);
-insert into Fav_Properties (UserID, PropertyID) values (4, 12);
-insert into Fav_Properties (UserID, PropertyID) values (5, 13);
-insert into Fav_Properties (UserID, PropertyID) values (6, 14);
-insert into Fav_Properties (UserID, PropertyID) values (7, 15);
-insert into Fav_Properties (UserID, PropertyID) values (8, 16);
-insert into Fav_Properties (UserID, PropertyID) values (9, 17);
-insert into Fav_Properties (UserID, PropertyID) values (10, 18);
-insert into Fav_Properties (UserID, PropertyID) values (1, 19);
-insert into Fav_Properties (UserID, PropertyID) values (2, 20);
-insert into Fav_Properties (UserID, PropertyID) values (3, 21);
-insert into Fav_Properties (UserID, PropertyID) values (4, 22);
-insert into Fav_Properties (UserID, PropertyID) values (5, 23);
-insert into Fav_Properties (UserID, PropertyID) values (6, 24);
-insert into Fav_Properties (UserID, PropertyID) values (7, 25);
-insert into Fav_Properties (UserID, PropertyID) values (8, 26);
-insert into Fav_Properties (UserID, PropertyID) values (9, 27);
-insert into Fav_Properties (UserID, PropertyID) values (10, 28);
-insert into Fav_Properties (UserID, PropertyID) values (1, 29);
-insert into Fav_Properties (UserID, PropertyID) values (2, 30);
-insert into Fav_Properties (UserID, PropertyID) values (3, 31);
-insert into Fav_Properties (UserID, PropertyID) values (4, 32);
-insert into Fav_Properties (UserID, PropertyID) values (5, 33);
-insert into Fav_Properties (UserID, PropertyID) values (6, 34);
-insert into Fav_Properties (UserID, PropertyID) values (7, 35);
-insert into Fav_Properties (UserID, PropertyID) values (8, 36);
-insert into Fav_Properties (UserID, PropertyID) values (9, 37);
-insert into Fav_Properties (UserID, PropertyID) values (10, 38);
-insert into Fav_Properties (UserID, PropertyID) values (1, 39);
-insert into Fav_Properties (UserID, PropertyID) values (2, 40);
-insert into Fav_Properties (UserID, PropertyID) values (3, 41);
-insert into Fav_Properties (UserID, PropertyID) values (4, 42);
-insert into Fav_Properties (UserID, PropertyID) values (5, 43);
-insert into Fav_Properties (UserID, PropertyID) values (6, 44);
-insert into Fav_Properties (UserID, PropertyID) values (7, 45);
-insert into Fav_Properties (UserID, PropertyID) values (8, 46);
-insert into Fav_Properties (UserID, PropertyID) values (9, 47);
-insert into Fav_Properties (UserID, PropertyID) values (10, 48);
-insert into Fav_Properties (UserID, PropertyID) values (1, 49);
-insert into Fav_Properties (UserID, PropertyID) values (2, 50);
-insert into Fav_Properties (UserID, PropertyID) values (3, 51);
-insert into Fav_Properties (UserID, PropertyID) values (4, 52);
-insert into Fav_Properties (UserID, PropertyID) values (5, 53);
-insert into Fav_Properties (UserID, PropertyID) values (6, 54);
-insert into Fav_Properties (UserID, PropertyID) values (7, 55);
-insert into Fav_Properties (UserID, PropertyID) values (8, 56);
-insert into Fav_Properties (UserID, PropertyID) values (9, 57);
-insert into Fav_Properties (UserID, PropertyID) values (10, 58);
-insert into Fav_Properties (UserID, PropertyID) values (1, 59);
-insert into Fav_Properties (UserID, PropertyID) values (2, 60);
-insert into Fav_Properties (UserID, PropertyID) values (3, 61);
-insert into Fav_Properties (UserID, PropertyID) values (4, 62);
-insert into Fav_Properties (UserID, PropertyID) values (5, 63);
-insert into Fav_Properties (UserID, PropertyID) values (6, 64);
-insert into Fav_Properties (UserID, PropertyID) values (7, 65);
-insert into Fav_Properties (UserID, PropertyID) values (8, 66);
-insert into Fav_Properties (UserID, PropertyID) values (9, 67);
-insert into Fav_Properties (UserID, PropertyID) values (10, 68);
-insert into Fav_Properties (UserID, PropertyID) values (1, 69);
-insert into Fav_Properties (UserID, PropertyID) values (2, 70);
-insert into Fav_Properties (UserID, PropertyID) values (3, 71);
-insert into Fav_Properties (UserID, PropertyID) values (4, 72);
-insert into Fav_Properties (UserID, PropertyID) values (5, 73);
-insert into Fav_Properties (UserID, PropertyID) values (6, 74);
-insert into Fav_Properties (UserID, PropertyID) values (7, 75);
-insert into Fav_Properties (UserID, PropertyID) values (8, 76);
-insert into Fav_Properties (UserID, PropertyID) values (9, 77);
-insert into Fav_Properties (UserID, PropertyID) values (10, 78);
-insert into Fav_Properties (UserID, PropertyID) values (1, 79);
-insert into Fav_Properties (UserID, PropertyID) values (2, 80);
-insert into Fav_Properties (UserID, PropertyID) values (3, 81);
-insert into Fav_Properties (UserID, PropertyID) values (4, 82);
-insert into Fav_Properties (UserID, PropertyID) values (5, 83);
-insert into Fav_Properties (UserID, PropertyID) values (6, 84);
-insert into Fav_Properties (UserID, PropertyID) values (7, 85);
-insert into Fav_Properties (UserID, PropertyID) values (8, 86);
-insert into Fav_Properties (UserID, PropertyID) values (9, 87);
-insert into Fav_Properties (UserID, PropertyID) values (10, 88);
-insert into Fav_Properties (UserID, PropertyID) values (1, 89);
-insert into Fav_Properties (UserID, PropertyID) values (2, 90);
-insert into Fav_Properties (UserID, PropertyID) values (3, 91);
-insert into Fav_Properties (UserID, PropertyID) values (4, 92);
-insert into Fav_Properties (UserID, PropertyID) values (5, 93);
-insert into Fav_Properties (UserID, PropertyID) values (6, 94);
-insert into Fav_Properties (UserID, PropertyID) values (7, 95);
-insert into Fav_Properties (UserID, PropertyID) values (8, 96);
-insert into Fav_Properties (UserID, PropertyID) values (9, 97);
-insert into Fav_Properties (UserID, PropertyID) values (10, 98);
-insert into Fav_Properties (UserID, PropertyID) values (1, 99);
-insert into Fav_Properties (UserID, PropertyID) values (2, 9);
-insert into Fav_Properties (UserID, PropertyID) values (3, 10);
-insert into Fav_Properties (UserID, PropertyID) values (4, 11);
-insert into Fav_Properties (UserID, PropertyID) values (5, 12);
-insert into Fav_Properties (UserID, PropertyID) values (6, 13);
-insert into Fav_Properties (UserID, PropertyID) values (7, 14);
-insert into Fav_Properties (UserID, PropertyID) values (8, 15);
-insert into Fav_Properties (UserID, PropertyID) values (9, 16);
-insert into Fav_Properties (UserID, PropertyID) values (10, 17);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 9);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 10);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 11);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 12);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 13);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 14);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 15);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 16);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 17);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 18);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 19);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 20);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 21);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 22);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 23);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 24);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 25);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 26);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 27);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 28);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 29);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 30);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 31);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 32);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 33);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 34);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 35);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 36);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 37);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 38);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 39);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 40);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 41);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 42);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 43);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 44);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 45);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 46);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 47);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 48);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 49);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 50);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 51);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 52);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 53);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 54);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 55);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 56);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 57);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 58);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 59);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 60);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 61);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 62);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 63);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 64);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 65);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 66);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 67);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 68);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 69);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 70);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 71);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 72);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 73);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 74);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 75);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 76);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 77);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 78);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 79);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 80);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 81);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 82);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 83);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 84);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 85);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 86);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 87);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 88);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 89);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 90);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 91);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 92);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 93);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 94);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 95);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 96);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 97);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 98);
+insert into Fav_Properties (UserID, PropertyID)
+values (1, 99);
+insert into Fav_Properties (UserID, PropertyID)
+values (2, 9);
+insert into Fav_Properties (UserID, PropertyID)
+values (3, 10);
+insert into Fav_Properties (UserID, PropertyID)
+values (4, 11);
+insert into Fav_Properties (UserID, PropertyID)
+values (5, 12);
+insert into Fav_Properties (UserID, PropertyID)
+values (6, 13);
+insert into Fav_Properties (UserID, PropertyID)
+values (7, 14);
+insert into Fav_Properties (UserID, PropertyID)
+values (8, 15);
+insert into Fav_Properties (UserID, PropertyID)
+values (9, 16);
+insert into Fav_Properties (UserID, PropertyID)
+values (10, 17);
 
-
+-- seller ID and BuyerId starts from one
 DROP TABLE IF EXISTS Deed;
 -- Create Deed table
 CREATE TABLE Deed
@@ -2587,12 +2687,105 @@ CREATE TABLE Deed
 );
 
 insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
-values (4, 5, '2022-08-20', 3, 3, 3, 3);
+values (1, 1, '2020-07-14', 300, 1, 1, 1);
 insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
-values (2, 1, '2022-04-15', 3, 3, 1, 1);
+values (2, 2, '2021-11-16', 301, 2, 2, 2);
 insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
-values (3, 1, '2022-06-18', 2, 2, 2, 2);
-
+values (3, 3, '2021-07-07', 302, 3, 3, 3);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (4, 4, '2022-10-22', 303, 4, 4, 4);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (5, 5, '2020-10-16', 304, 5, 5, 5);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (6, 6, '2022-10-05', 305, 6, 6, 6);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (7, 7, '2022-07-06', 306, 7, 7, 7);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (8, 8, '2022-03-08', 307, 8, 8, 8);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (9, 9, '2021-09-29', 308, 9, 9, 9);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (10, 10, '2022-10-31', 309, 10, 10, 10);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (11, 11, '2022-02-17', 310, 11, 11, 11);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (12, 12, '2021-11-08', 311, 12, 12, 12);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (13, 13, '2022-09-03', 312, 13, 13, 13);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (14, 14, '2020-07-13', 313, 14, 14, 14);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (15, 15, '2022-03-08', 314, 15, 15, 15);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (16, 16, '2020-08-17', 315, 16, 16, 16);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (17, 17, '2022-05-27', 316, 17, 17, 17);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (18, 18, '2020-08-19', 317, 18, 18, 18);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (19, 19, '2022-08-06', 318, 19, 19, 19);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (20, 20, '2020-08-31', 319, 20, 20, 20);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (21, 21, '2023-03-18', 320, 21, 21, 21);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (22, 22, '2020-06-27', 321, 22, 22, 22);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (23, 23, '2022-07-22', 322, 23, 23, 23);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (24, 24, '2021-06-11', 323, 24, 24, 24);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (25, 25, '2021-02-15', 324, 25, 25, 25);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (26, 26, '2020-09-07', 325, 26, 26, 26);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (27, 27, '2020-06-10', 326, 27, 27, 27);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (28, 28, '2023-03-21', 327, 28, 28, 28);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (29, 29, '2022-12-09', 328, 29, 29, 29);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (30, 30, '2022-04-19', 329, 30, 30, 30);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (31, 31, '2022-01-10', 330, 31, 31, 31);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (32, 32, '2020-09-06', 331, 32, 32, 32);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (33, 33, '2020-09-27', 332, 33, 33, 33);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (34, 34, '2022-10-04', 333, 34, 34, 34);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (35, 35, '2020-09-20', 334, 35, 35, 35);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (36, 36, '2021-03-15', 335, 36, 36, 36);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (37, 37, '2022-08-23', 336, 37, 37, 37);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (38, 38, '2022-08-07', 337, 38, 38, 38);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (39, 39, '2021-11-12', 338, 39, 39, 39);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (40, 40, '2022-09-03', 339, 40, 40, 40);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (41, 41, '2023-02-09', 340, 41, 41, 41);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (42, 42, '2022-01-04', 341, 42, 42, 42);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (43, 43, '2020-05-26', 342, 43, 43, 43);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (44, 44, '2020-11-23', 343, 44, 44, 44);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (45, 45, '2021-05-13', 344, 45, 45, 45);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (46, 46, '2021-04-16', 345, 46, 46, 46);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (47, 47, '2020-09-11', 346, 47, 47, 47);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (48, 48, '2021-12-07', 347, 48, 48, 48);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (49, 49, '2023-03-02', 348, 49, 49, 49);
+insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
+values (50, 50, '2022-10-13', 349, 50, 50, 50);
 
 
 
@@ -2615,12 +2808,107 @@ CREATE TABLE Lease
     PRIMARY KEY (LeaseID, PropertyID)
 );
 
-insert into Lease (propertyid, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
-values (4, 5, '2022-08-20', '2023-08-20', 3, 3, 3, 3);
-insert into Lease (propertyid, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
-values (2, 1, '2022-04-15', '2023-04-15', 3, 3, 2, 2);
-insert into Lease (propertyid, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
-values (3, 1, '2022-06-18', '2023-06-18', 2, 2, 2, 2);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (51, 1, '2020-05-22', '2022-09-20', 200, 1, 100, 1);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (52, 2, '2019-07-10', '2022-02-17', 201, 2, 101, 2);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (53, 3, '2017-09-22', '2022-05-21', 202, 3, 102, 3);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (54, 4, '2019-05-30', '2021-12-03', 203, 4, 103, 4);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (55, 5, '2019-04-25', '2021-09-12', 204, 5, 104, 5);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (56, 6, '2018-07-06', '2021-09-12', 205, 6, 105, 6);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (57, 7, '2019-01-26', '2022-05-08', 206, 7, 106, 7);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (58, 8, '2017-10-31', '2022-10-03', 207, 8, 107, 8);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (59, 9, '2020-01-26', '2022-04-19', 208, 9, 108, 9);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (60, 10, '2018-08-03', '2023-02-03', 209, 10, 109, 10);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (61, 11, '2018-03-09', '2022-04-22', 210, 11, 110, 11);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (62, 12, '2018-10-09', '2021-11-27', 211, 12, 111, 12);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (63, 13, '2020-06-29', '2021-11-20', 212, 13, 112, 13);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (64, 14, '2018-01-01', '2021-11-10', 213, 14, 113, 14);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (65, 15, '2020-06-04', '2023-03-11', 214, 15, 114, 15);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (66, 16, '2020-07-13', '2022-12-04', 215, 16, 115, 16);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (67, 17, '2020-02-23', '2023-03-12', 216, 17, 116, 17);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (68, 18, '2019-08-31', '2022-07-28', 217, 18, 117, 18);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (69, 19, '2020-07-03', '2021-08-12', 218, 19, 118, 19);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (70, 20, '2019-07-16', '2021-10-20', 219, 20, 119, 20);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (71, 21, '2018-01-15', '2022-04-01', 220, 21, 120, 21);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (72, 22, '2019-06-16', '2022-02-18', 221, 22, 121, 22);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (73, 23, '2018-03-09', '2023-04-17', 222, 23, 122, 23);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (74, 24, '2019-09-28', '2021-09-27', 223, 24, 123, 24);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (75, 25, '2018-07-06', '2022-10-24', 224, 25, 124, 25);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (76, 26, '2019-10-24', '2021-12-26', 225, 26, 125, 26);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (77, 27, '2020-05-18', '2021-11-28', 226, 27, 126, 27);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (78, 28, '2019-08-02', '2021-07-29', 227, 28, 127, 28);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (79, 29, '2019-08-03', '2022-04-08', 228, 29, 128, 29);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (80, 30, '2017-07-20', '2021-07-07', 229, 30, 129, 30);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (81, 31, '2020-03-30', '2021-09-14', 230, 31, 130, 31);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (82, 32, '2017-12-18', '2023-01-13', 231, 32, 131, 32);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (83, 33, '2020-03-11', '2021-11-27', 232, 33, 132, 33);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (84, 34, '2017-06-05', '2022-06-12', 233, 34, 133, 34);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (85, 35, '2019-03-24', '2021-07-15', 234, 35, 134, 35);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (86, 36, '2017-09-14', '2022-07-01', 235, 36, 135, 36);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (87, 37, '2019-12-16', '2023-01-28', 236, 37, 136, 37);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (88, 38, '2019-09-14', '2022-08-12', 237, 38, 137, 38);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (89, 39, '2017-05-13', '2023-02-04', 238, 39, 138, 39);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (90, 40, '2018-04-05', '2021-11-06', 239, 40, 139, 40);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (91, 41, '2018-04-11', '2023-02-17', 240, 41, 140, 41);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (92, 42, '2020-02-25', '2021-10-03', 241, 42, 141, 42);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (93, 43, '2018-06-23', '2022-09-14', 242, 43, 142, 43);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (94, 44, '2018-12-25', '2022-12-27', 243, 44, 143, 44);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (95, 45, '2017-10-21', '2022-10-26', 244, 45, 144, 45);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (96, 46, '2019-05-17', '2022-10-23', 245, 46, 145, 46);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (97, 47, '2019-02-08', '2021-07-15', 246, 47, 146, 47);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (98, 48, '2019-09-28', '2022-03-13', 247, 48, 147, 48);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (99, 49, '2018-08-23', '2023-02-02', 248, 49, 148, 49);
+insert into Lease (PropertyID, LeaseID, StartDate, EndDate, LandlordUserID, LandlordID, RenterUserID, RenterID)
+values (100, 50, '2018-06-26', '2021-09-21', 249, 50, 149, 50);
+
 
 DROP TABLE IF EXISTS Media;
 -- Create Media Table
