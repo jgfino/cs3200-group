@@ -2466,12 +2466,107 @@ CREATE TABLE Fav_Properties
     PRIMARY KEY (UserID, PropertyID)
 );
 
-insert into Fav_Properties (UserID, PropertyID)
-values (1, 1);
-insert into Fav_Properties (UserID, PropertyID)
-values (1, 2);
-insert into Fav_Properties (UserID, PropertyID)
-values (3, 2);
+insert into Fav_Properties (UserID, PropertyID) values (1, 9);
+insert into Fav_Properties (UserID, PropertyID) values (2, 10);
+insert into Fav_Properties (UserID, PropertyID) values (3, 11);
+insert into Fav_Properties (UserID, PropertyID) values (4, 12);
+insert into Fav_Properties (UserID, PropertyID) values (5, 13);
+insert into Fav_Properties (UserID, PropertyID) values (6, 14);
+insert into Fav_Properties (UserID, PropertyID) values (7, 15);
+insert into Fav_Properties (UserID, PropertyID) values (8, 16);
+insert into Fav_Properties (UserID, PropertyID) values (9, 17);
+insert into Fav_Properties (UserID, PropertyID) values (10, 18);
+insert into Fav_Properties (UserID, PropertyID) values (1, 19);
+insert into Fav_Properties (UserID, PropertyID) values (2, 20);
+insert into Fav_Properties (UserID, PropertyID) values (3, 21);
+insert into Fav_Properties (UserID, PropertyID) values (4, 22);
+insert into Fav_Properties (UserID, PropertyID) values (5, 23);
+insert into Fav_Properties (UserID, PropertyID) values (6, 24);
+insert into Fav_Properties (UserID, PropertyID) values (7, 25);
+insert into Fav_Properties (UserID, PropertyID) values (8, 26);
+insert into Fav_Properties (UserID, PropertyID) values (9, 27);
+insert into Fav_Properties (UserID, PropertyID) values (10, 28);
+insert into Fav_Properties (UserID, PropertyID) values (1, 29);
+insert into Fav_Properties (UserID, PropertyID) values (2, 30);
+insert into Fav_Properties (UserID, PropertyID) values (3, 31);
+insert into Fav_Properties (UserID, PropertyID) values (4, 32);
+insert into Fav_Properties (UserID, PropertyID) values (5, 33);
+insert into Fav_Properties (UserID, PropertyID) values (6, 34);
+insert into Fav_Properties (UserID, PropertyID) values (7, 35);
+insert into Fav_Properties (UserID, PropertyID) values (8, 36);
+insert into Fav_Properties (UserID, PropertyID) values (9, 37);
+insert into Fav_Properties (UserID, PropertyID) values (10, 38);
+insert into Fav_Properties (UserID, PropertyID) values (1, 39);
+insert into Fav_Properties (UserID, PropertyID) values (2, 40);
+insert into Fav_Properties (UserID, PropertyID) values (3, 41);
+insert into Fav_Properties (UserID, PropertyID) values (4, 42);
+insert into Fav_Properties (UserID, PropertyID) values (5, 43);
+insert into Fav_Properties (UserID, PropertyID) values (6, 44);
+insert into Fav_Properties (UserID, PropertyID) values (7, 45);
+insert into Fav_Properties (UserID, PropertyID) values (8, 46);
+insert into Fav_Properties (UserID, PropertyID) values (9, 47);
+insert into Fav_Properties (UserID, PropertyID) values (10, 48);
+insert into Fav_Properties (UserID, PropertyID) values (1, 49);
+insert into Fav_Properties (UserID, PropertyID) values (2, 50);
+insert into Fav_Properties (UserID, PropertyID) values (3, 51);
+insert into Fav_Properties (UserID, PropertyID) values (4, 52);
+insert into Fav_Properties (UserID, PropertyID) values (5, 53);
+insert into Fav_Properties (UserID, PropertyID) values (6, 54);
+insert into Fav_Properties (UserID, PropertyID) values (7, 55);
+insert into Fav_Properties (UserID, PropertyID) values (8, 56);
+insert into Fav_Properties (UserID, PropertyID) values (9, 57);
+insert into Fav_Properties (UserID, PropertyID) values (10, 58);
+insert into Fav_Properties (UserID, PropertyID) values (1, 59);
+insert into Fav_Properties (UserID, PropertyID) values (2, 60);
+insert into Fav_Properties (UserID, PropertyID) values (3, 61);
+insert into Fav_Properties (UserID, PropertyID) values (4, 62);
+insert into Fav_Properties (UserID, PropertyID) values (5, 63);
+insert into Fav_Properties (UserID, PropertyID) values (6, 64);
+insert into Fav_Properties (UserID, PropertyID) values (7, 65);
+insert into Fav_Properties (UserID, PropertyID) values (8, 66);
+insert into Fav_Properties (UserID, PropertyID) values (9, 67);
+insert into Fav_Properties (UserID, PropertyID) values (10, 68);
+insert into Fav_Properties (UserID, PropertyID) values (1, 69);
+insert into Fav_Properties (UserID, PropertyID) values (2, 70);
+insert into Fav_Properties (UserID, PropertyID) values (3, 71);
+insert into Fav_Properties (UserID, PropertyID) values (4, 72);
+insert into Fav_Properties (UserID, PropertyID) values (5, 73);
+insert into Fav_Properties (UserID, PropertyID) values (6, 74);
+insert into Fav_Properties (UserID, PropertyID) values (7, 75);
+insert into Fav_Properties (UserID, PropertyID) values (8, 76);
+insert into Fav_Properties (UserID, PropertyID) values (9, 77);
+insert into Fav_Properties (UserID, PropertyID) values (10, 78);
+insert into Fav_Properties (UserID, PropertyID) values (1, 79);
+insert into Fav_Properties (UserID, PropertyID) values (2, 80);
+insert into Fav_Properties (UserID, PropertyID) values (3, 81);
+insert into Fav_Properties (UserID, PropertyID) values (4, 82);
+insert into Fav_Properties (UserID, PropertyID) values (5, 83);
+insert into Fav_Properties (UserID, PropertyID) values (6, 84);
+insert into Fav_Properties (UserID, PropertyID) values (7, 85);
+insert into Fav_Properties (UserID, PropertyID) values (8, 86);
+insert into Fav_Properties (UserID, PropertyID) values (9, 87);
+insert into Fav_Properties (UserID, PropertyID) values (10, 88);
+insert into Fav_Properties (UserID, PropertyID) values (1, 89);
+insert into Fav_Properties (UserID, PropertyID) values (2, 90);
+insert into Fav_Properties (UserID, PropertyID) values (3, 91);
+insert into Fav_Properties (UserID, PropertyID) values (4, 92);
+insert into Fav_Properties (UserID, PropertyID) values (5, 93);
+insert into Fav_Properties (UserID, PropertyID) values (6, 94);
+insert into Fav_Properties (UserID, PropertyID) values (7, 95);
+insert into Fav_Properties (UserID, PropertyID) values (8, 96);
+insert into Fav_Properties (UserID, PropertyID) values (9, 97);
+insert into Fav_Properties (UserID, PropertyID) values (10, 98);
+insert into Fav_Properties (UserID, PropertyID) values (1, 99);
+insert into Fav_Properties (UserID, PropertyID) values (2, 9);
+insert into Fav_Properties (UserID, PropertyID) values (3, 10);
+insert into Fav_Properties (UserID, PropertyID) values (4, 11);
+insert into Fav_Properties (UserID, PropertyID) values (5, 12);
+insert into Fav_Properties (UserID, PropertyID) values (6, 13);
+insert into Fav_Properties (UserID, PropertyID) values (7, 14);
+insert into Fav_Properties (UserID, PropertyID) values (8, 15);
+insert into Fav_Properties (UserID, PropertyID) values (9, 16);
+insert into Fav_Properties (UserID, PropertyID) values (10, 17);
+
 
 DROP TABLE IF EXISTS Deed;
 -- Create Deed table
@@ -2497,6 +2592,7 @@ insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buye
 values (2, 1, '2022-04-15', 3, 3, 1, 1);
 insert into Deed (propertyid, deedid, purchasedate, selleruserid, sellerid, buyeruserid, buyerid)
 values (3, 1, '2022-06-18', 2, 2, 2, 2);
+
 
 
 
