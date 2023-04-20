@@ -56,7 +56,7 @@ def get_renters():
 
 @landlords.route('/leases/<UserID>/<LandlordID>', methods=['GET'])
 def get_leases(UserID, LandlordID):
-    q = 'select * from Lease join Property on Property.PropertyID = Lease.PropertyID join User on User.UserID = Lease.RenterUserID where Lease.LandlordUserID = {0} and Lease.LandlordID = {1}'.format(
+    q = 'select Property.PropertyID, Lease.LeaseID, Property.City, Property.State, Property.Zip, Property.Address, User.FirstName, User.LastName, Lease.EndDate from Lease join Property on Property.PropertyID = Lease.PropertyID join User on User.UserID = Lease.RenterUserID where Lease.LandlordUserID = {0} and Lease.LandlordID = {1}'.format(
         UserID, LandlordID)
     return do_query(q)
 
