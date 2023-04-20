@@ -8,7 +8,7 @@ The main goal of this project is to design a database that will allow buyers and
 ## Project Structure
 This repo contains 3 Docker containers:
 1. A MySQL container that creates a database, inserts data, and pulls data.
-2. A Python Flask container to implement a REST API.
+2. A Python Flask container to implement a REST API. Within the Flask container, we have 32 tests for our routes in Thunderclient.
 3. A Local AppSmith Server that shows pages for renters and landlords that users can interact with.
 
 
@@ -24,24 +24,3 @@ This repo contains 3 Docker containers:
 
 ## Credits
 This project was created by Nitya Sompuram, Alexander Andrews, Nicholas Moulle-Berteaux, and Julia Finocchiaro for the CS 3200 database design course at Northeastern University.
-
-## MySQL + Flask Boilerplate Project
-
-This repo contains a boilerplate setup for spinning up 3 Docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
-1. A Local AppSmith Server
-
-## How to setup and start the containers
-**Important** - you need Docker Desktop installed
-
-1. Clone this repository.  
-1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
-1. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the a non-root user named webapp. 
-1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
-1. Build the images with `docker compose build`
-1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
-
-
-
-
