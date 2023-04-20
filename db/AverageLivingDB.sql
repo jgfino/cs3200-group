@@ -2928,11 +2928,207 @@ CREATE TABLE IF NOT EXISTS Media
 );
 
 insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
-values (1, 'mp4', 'MagnaVestibulumAliquet.mov', 23, 1, 2);
+values (1, 'png', 'JustoInHac.ppt', 142, 1, 1);
 insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
-values (2, 'mp4', 'PrimisInFaucibus.mp3', 42, 1, 3);
+values (2, 'jpeg', 'QuisTurpisEget.mp3', 979, 2, 2);
 insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
-values (3, 'jpeg', 'EuNibh.gif', 84, 1, 1);
+values (3, 'jpeg', 'NullaNunc.xls', 194, 3, 3);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (4, 'png', 'BlanditNamNulla.mp3', 435, 4, 4);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (5, 'png', 'AmetLobortisSapien.jpeg', 226, 5, 5);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (6, 'png', 'LectusSuspendisse.mp3', 584, 6, 6);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (7, 'jpeg', 'NullaUt.mp3', 256, 7, 7);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (8, 'jpeg', 'Aliquam.jpeg', 741, 8, 8);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (9, 'png', 'IpsumPraesentBlandit.ppt', 854, 9, 9);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (10, 'jpeg', 'NamCongueRisus.mp3', 373, 10, 10);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (11, 'jpeg', 'OrnareConsequatLectus.ppt', 712, 11, 11);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (12, 'png', 'VelNulla.ppt', 374, 12, 12);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (13, 'png', 'PosuereCubiliaCurae.mpeg', 204, 13, 13);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (14, 'jpeg', 'MassaDonec.png', 698, 14, 14);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (15, 'jpeg', 'Lacus.avi', 330, 15, 15);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (16, 'jpeg', 'NisiVolutpatEleifend.pdf', 212, 16, 16);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (17, 'png', 'Id.avi', 735, 17, 17);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (18, 'jpeg', 'InterdumIn.txt', 761, 18, 18);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (19, 'png', 'ElitSodalesScelerisque.mpeg', 980, 19, 19);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (20, 'jpeg', 'Volutpat.xls', 784, 20, 20);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (21, 'png', 'CongueDiam.avi', 861, 21, 21);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (22, 'jpeg', 'ConvallisMorbi.ppt', 971, 22, 22);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (23, 'png', 'SitAmetEros.pdf', 387, 23, 23);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (24, 'png', 'Duis.avi', 971, 24, 24);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (25, 'png', 'UtAt.ppt', 559, 25, 25);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (26, 'png', 'AFeugiat.xls', 211, 26, 26);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (27, 'jpeg', 'OrciMaurisLacinia.png', 663, 27, 27);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (28, 'jpeg', 'IaculisCongue.xls', 466, 28, 28);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (29, 'png', 'Integer.avi', 759, 29, 29);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (30, 'jpeg', 'AeneanFermentum.avi', 802, 30, 30);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (31, 'png', 'Dictumst.mp3', 787, 31, 31);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (32, 'jpeg', 'CongueEtiam.avi', 299, 32, 32);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (33, 'jpeg', 'NasceturRidiculus.jpeg', 581, 33, 33);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (34, 'png', 'SociisNatoquePenatibus.pdf', 862, 34, 34);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (35, 'jpeg', 'Semper.mov', 642, 35, 35);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (36, 'jpeg', 'Erat.xls', 232, 36, 36);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (37, 'png', 'LuctusCum.tiff', 139, 37, 37);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (38, 'png', 'Orci.gif', 683, 38, 38);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (39, 'png', 'NamUltricesLibero.pdf', 162, 39, 39);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (40, 'jpeg', 'Nisi.xls', 967, 40, 40);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (41, 'jpeg', 'VestibulumVelit.mp3', 127, 41, 41);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (42, 'png', 'Vestibulum.pdf', 243, 42, 42);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (43, 'png', 'Vel.tiff', 965, 43, 43);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (44, 'jpeg', 'SedInterdum.ppt', 788, 44, 44);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (45, 'jpeg', 'VitaeNisiNam.mov', 364, 45, 45);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (46, 'jpeg', 'VenenatisTristique.avi', 379, 46, 46);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (47, 'png', 'Justo.xls', 467, 47, 47);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (48, 'jpeg', 'MassaId.mp3', 653, 48, 48);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (49, 'jpeg', 'Lacus.xls', 984, 49, 49);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (50, 'jpeg', 'EgetEleifendLuctus.xls', 757, 50, 50);
+
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (51, 'png', 'Nunc.xls', 930, 51, 51);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (52, 'jpeg', 'SitAmetEros.xls', 129, 52, 52);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (53, 'png', 'FaucibusCursusUrna.mp3', 541, 53, 53);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (54, 'jpeg', 'BibendumImperdietNullam.ppt', 797, 54, 54);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (55, 'png', 'Dapibus.pdf', 245, 55, 55);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (56, 'jpeg', 'Pede.ppt', 168, 56, 56);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (57, 'jpeg', 'Nisl.jpeg', 872, 57, 57);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (58, 'png', 'NasceturRidiculus.ppt', 292, 58, 58);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (59, 'jpeg', 'TurpisEget.avi', 756, 59, 59);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (60, 'png', 'EtiamFaucibus.avi', 961, 60, 60);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (61, 'png', 'TinciduntEuFelis.pdf', 588, 61, 61);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (62, 'png', 'OdioJusto.avi', 951, 62, 62);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (63, 'png', 'ConsectetuerAdipiscingElit.mp3', 528, 63, 63);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (64, 'png', 'Ante.avi', 956, 64, 64);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (65, 'jpeg', 'VestibulumRutrumRutrum.tiff', 405, 65, 65);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (66, 'png', 'LectusAliquamSit.xls', 192, 66, 66);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (67, 'jpeg', 'LiberoRutrum.jpeg', 874, 67, 67);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (68, 'png', 'ParturientMontesNascetur.xls', 538, 68, 68);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (69, 'png', 'Tincidunt.png', 340, 69, 69);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (70, 'png', 'AugueVelAccumsan.txt', 910, 70, 70);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (71, 'jpeg', 'NatoquePenatibusEt.xls', 663, 71, 71);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (72, 'jpeg', 'VulputateNonummyMaecenas.ppt', 812, 72, 72);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (73, 'png', 'QuamPede.tiff', 264, 73, 73);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (74, 'jpeg', 'NuncNisl.avi', 733, 74, 74);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (75, 'jpeg', 'EnimLorem.avi', 950, 75, 75);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (76, 'png', 'IpsumIntegerA.png', 820, 76, 76);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (77, 'png', 'FacilisiCrasNon.xls', 404, 77, 77);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (78, 'jpeg', 'Curabitur.mov', 984, 78, 78);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (79, 'png', 'Integer.ppt', 187, 79, 79);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (80, 'jpeg', 'Nec.ppt', 999, 80, 80);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (81, 'jpeg', 'Lorem.tiff', 423, 81, 81);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (82, 'png', 'PortaVolutpatErat.avi', 946, 82, 82);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (83, 'jpeg', 'Cras.pdf', 539, 83, 83);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (84, 'jpeg', 'Nunc.pdf', 532, 84, 84);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (85, 'jpeg', 'SemSedSagittis.jpeg', 353, 85, 85);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (86, 'png', 'Porta.pdf', 496, 86, 86);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (87, 'png', 'CrasNonVelit.xls', 486, 87, 87);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (88, 'png', 'Praesent.ppt', 259, 88, 88);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (89, 'jpeg', 'IdLigulaSuspendisse.ppt', 347, 89, 89);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (90, 'jpeg', 'AcLobortisVel.jpeg', 981, 90, 90);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (91, 'png', 'NullaEget.jpeg', 198, 91, 91);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (92, 'png', 'Est.avi', 560, 92, 92);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (93, 'jpeg', 'Mollis.doc', 904, 93, 93);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (94, 'jpeg', 'PhasellusId.xls', 952, 94, 94);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (95, 'png', 'VitaeIpsumAliquam.mp3', 986, 95, 95);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (96, 'png', 'EuOrci.tiff', 441, 96, 96);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (97, 'jpeg', 'MagnaVulputate.gif', 834, 97, 97);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (98, 'jpeg', 'Elementum.pdf', 383, 98, 98);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (99, 'jpeg', 'BlanditMi.xls', 371, 99, 99);
+insert into Media (MediaID, Format, FilePath, FileSize, PropertyID, Uploaded_By)
+values (100, 'png', 'MolestieNibhIn.tiff', 790, 100, 100);
+
 
 DROP TABLE IF EXISTS Picture;
 -- Create Picture table
@@ -2950,11 +3146,106 @@ CREATE TABLE IF NOT EXISTS Picture
 );
 
 insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
-values (1, '1920', '1080', true, 1, 1);
+values (1, 1920, 1080, true, 51, 51);
 insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
-values (2, '720', '480', false, 1, 2);
+values (2, 1280, 720, true, 52, 52);
 insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
-values (3, '1280', '1080', true, 1, 3);
+values (3, 720, 360, true, 53, 53);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (4, 1920, 1080, true, 54, 54);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (5, 1280, 720, true, 55, 55);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (6, 720, 360, true, 56, 56);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (7, 1920, 1080, false, 57, 57);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (8, 1280, 720, true, 58, 58);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (9, 720, 360, false, 59, 59);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (10, 1920, 1080, false, 60, 60);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (11, 1280, 720, false, 61, 61);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (12, 720, 360, false, 62, 62);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (13, 1920, 1080, false, 63, 63);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (14, 1280, 720, true, 64, 64);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (15, 720, 360, false, 65, 65);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (16, 1920, 1080, false, 66, 66);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (17, 1280, 720, true, 67, 67);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (18, 720, 360, true, 68, 68);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (19, 1920, 1080, false, 69, 69);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (20, 1280, 720, true, 70, 70);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (21, 720, 360, true, 71, 71);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (22, 1920, 1080, true, 72, 72);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (23, 1280, 720, false, 73, 73);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (24, 720, 360, false, 74, 74);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (25, 1920, 1080, true, 75, 75);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (26, 1280, 720, false, 76, 76);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (27, 720, 360, false, 77, 77);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (28, 1920, 1080, false, 78, 78);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (29, 1280, 720, true, 79, 79);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (30, 720, 360, false, 80, 80);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (31, 1920, 1080, true, 81, 81);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (32, 1280, 720, true, 82, 82);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (33, 720, 360, false, 83, 83);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (34, 1920, 1080, false, 84, 84);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (35, 1280, 720, false, 85, 85);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (36, 720, 360, false, 86, 86);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (37, 1920, 1080, false, 87, 87);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (38, 1280, 720, true, 88, 88);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (39, 720, 360, true, 89, 89);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (40, 1920, 1080, false, 90, 90);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (41, 1280, 720, true, 91, 91);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (42, 720, 360, false, 92, 92);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (43, 1920, 1080, true, 93, 93);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (44, 1280, 720, false, 94, 94);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (45, 720, 360, true, 95, 95);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (46, 1920, 1080, false, 96, 96);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (47, 1280, 720, false, 97, 97);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (48, 720, 360, false, 98, 98);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (49, 1920, 1080, true, 99, 99);
+insert into Picture (PictureID, Width, Height, isPanorama, PropertyID, MediaID)
+values (50, 1280, 720, true, 100, 100);
+
 
 DROP TABLE IF EXISTS Video;
 -- Create Video table
@@ -2971,8 +3262,103 @@ CREATE TABLE IF NOT EXISTS Video
 );
 
 insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
-values (1, true, 5, 1, 1);
+values (1, false, 499, 1, 1);
 insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
-values (2, true, 6, 1, 2);
+values (2, true, 194, 2, 2);
 insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
-values (3, true, 20, 1, 3);
+values (3, false, 573, 3, 3);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (4, true, 796, 4, 4);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (5, true, 380, 5, 5);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (6, true, 190, 6, 6);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (7, true, 701, 7, 7);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (8, false, 217, 8, 8);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (9, true, 664, 9, 9);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (10, true, 223, 10, 10);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (11, true, 574, 11, 11);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (12, false, 649, 12, 12);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (13, true, 161, 13, 13);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (14, false, 424, 14, 14);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (15, false, 244, 15, 15);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (16, true, 335, 16, 16);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (17, false, 581, 17, 17);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (18, true, 371, 18, 18);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (19, false, 913, 19, 19);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (20, true, 349, 20, 20);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (21, true, 935, 21, 21);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (22, false, 649, 22, 22);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (23, true, 283, 23, 23);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (24, true, 422, 24, 24);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (25, true, 502, 25, 25);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (26, true, 392, 26, 26);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (27, false, 529, 27, 27);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (28, true, 151, 28, 28);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (29, true, 810, 29, 29);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (30, true, 437, 30, 30);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (31, true, 249, 31, 31);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (32, false, 668, 32, 32);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (33, true, 396, 33, 33);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (34, true, 429, 34, 34);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (35, true, 472, 35, 35);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (36, false, 906, 36, 36);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (37, true, 522, 37, 37);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (38, true, 242, 38, 38);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (39, true, 312, 39, 39);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (40, false, 346, 40, 40);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (41, false, 829, 41, 41);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (42, true, 530, 42, 42);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (43, true, 700, 43, 43);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (44, true, 323, 44, 44);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (45, true, 832, 45, 45);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (46, true, 766, 46, 46);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (47, false, 747, 47, 47);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (48, true, 973, 48, 48);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (49, false, 655, 49, 49);
+insert into Video (VideoID, HD, Duration, PropertyID, MediaID)
+values (50, true, 875, 50, 50);
+
