@@ -13,6 +13,8 @@ def do_query(query, single_row=False):
     for row in theData:
         json_data.append(dict(zip(row_headers, row)))
     if (single_row):
+        if (len(json_data) == 0):
+            return make_response(jsonify({'error': 'No data found'}), 404)
         json_data = json_data[0]
     the_response = make_response(jsonify(json_data))
     the_response.status_code = 200

@@ -33,7 +33,7 @@ def get_renter(userID):
 
 @renters.route('/properties/<propertyID>', methods=['GET'])
 def get_property(propertyID):
-    q = 'select * from Property join Neighborhood on Neighborhood.NeighborhoodID = Property.NeighborhoodID join User on User.UserID = Property.LandlordID where PropertyID = {0} and Property.LandlordID is not NULL'.format(
+    q = 'select * from Property join Neighborhood on Neighborhood.NeighborhoodID = Property.NeighborhoodID join User on User.UserID = Property.LandlordID where PropertyID = {0}'.format(
         propertyID)
     return do_query(q, True)
 
@@ -95,13 +95,6 @@ def get_videos(propertyID):
         propertyID)
     return do_query(q)
 
-# Get all properties and their neighborhood from the DB
-
-
-@renters.route('/properties', methods=['GET'])
-def get_properties():
-    q = 'select PropertyID, Num_Bedrooms, Num_Bathrooms, Property.NeighborhoodID, NickName from Property join Neighborhood on Property.NeighborhoodID = Neighborhood.NeighborhoodID join User on Property.LandlordUserID = Landlord.UserID'
-    return do_query(q)
 
 # Story 4 - Get lease information for a specific renter
 
